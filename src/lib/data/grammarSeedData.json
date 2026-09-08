@@ -1,0 +1,6673 @@
+[
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "だ / です",
+    "meaning": "To be (copula / am, is, are)",
+    "formation": "Noun / な-adj + だ (plain) / です (polite)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "これ / それ / あれ / どれ",
+    "meaning": "Demonstrative pronouns (this, that, that over there, which)",
+    "formation": "これ / それ / あれ / どれ (+ は / を / が)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "この / その / あの / どの",
+    "meaning": "Demonstrative determiners (this..., that..., which...)",
+    "formation": "この / その / あの / どの + Noun"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "ここ / そこ / あそこ / どこ",
+    "meaning": "Place demonstratives (here, there, over there, where)",
+    "formation": "ここ / そこ / あそこ / どこ (+ は / に / で)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "は (Topic)",
+    "meaning": "Marks the topic of the sentence",
+    "formation": "Noun + は (pronounced 'wa')"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "も (Also / Too)",
+    "meaning": "Also, too, as well",
+    "formation": "Noun + も"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "か (Question Marker)",
+    "meaning": "Turns a sentence into a question",
+    "formation": "Sentence + か"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "の (Possessive / Modifier)",
+    "meaning": "Possessive particle / noun descriptor ('s / of)",
+    "formation": "Noun 1 + の + Noun 2"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "じゃない / ではない",
+    "meaning": "Negative copula (is not / am not / are not)",
+    "formation": "Noun / な-adj + じゃない (plain) / ではありません (polite)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "でした / だった",
+    "meaning": "Past copula (was / were)",
+    "formation": "Noun / な-adj + だった (plain) / でした (polite)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "じゃなかった / ではありませんでした",
+    "meaning": "Past negative copula (was not / were not)",
+    "formation": "Noun / な-adj + じゃなかった / ではありませんでした"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "何 (なに / なん)",
+    "meaning": "What (interrogative pronoun)",
+    "formation": "何 + particle / 何 + ですか"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "だれ / どなた",
+    "meaning": "Who / whom (casual / polite)",
+    "formation": "だれ / どなた (+ が / の / は)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.1",
+    "title": "人 (Counting People)",
+    "meaning": "Counter for people (ひとり, ふたり, さんにん...)",
+    "formation": "Number + 人 (にん / り)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "を (Direct Object)",
+    "meaning": "Marks the direct object of an action",
+    "formation": "Noun + を + Transitive Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "に / へ (Direction)",
+    "meaning": "Indicates destination or direction of motion",
+    "formation": "Place + に / へ + 行く / 来る / 帰る"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "で (Location of Action)",
+    "meaning": "At, in (indicates where an action happens)",
+    "formation": "Location + で + Action Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "と (And / With)",
+    "meaning": "With (person) or exhaustive 'and' (nouns)",
+    "formation": "Noun 1 + と + Noun 2 / Person + と + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "に (Specific Time)",
+    "meaning": "At (specific point in time)",
+    "formation": "Time/Day + に + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "から (Starting Point)",
+    "meaning": "From (time, place, origin)",
+    "formation": "Time / Place + から"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "まで (Ending Point)",
+    "meaning": "Until, to, up to (time, place)",
+    "formation": "Time / Place + まで"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "ね (Agreement)",
+    "meaning": "Isn't it? / right? (seeking confirmation)",
+    "formation": "Sentence + ね"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "よ (Emphasis / Assertion)",
+    "meaning": "You know / I tell you (sharing new information)",
+    "formation": "Sentence + よ"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "〜ます / 〜ません",
+    "meaning": "Polite present affirmative and negative verb endings",
+    "formation": "Verb [ます stem] + ます / ません"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "〜ました / 〜ませんでした",
+    "meaning": "Polite past affirmative and negative verb endings",
+    "formation": "Verb [ます stem] + ました / ませんでした"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "いつ (When)",
+    "meaning": "When (interrogative for time)",
+    "formation": "いつ + Verb / いつ + ですか"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "どう / いかが",
+    "meaning": "How? / What about? (casual / polite)",
+    "formation": "Noun + は + どう / いかがですか"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.2",
+    "title": "つ (General Object Counter)",
+    "meaning": "General counter for things (ひとつ, ふたつ, みっつ...)",
+    "formation": "Number + つ"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "い-Adjectives Present",
+    "meaning": "Present affirmative and negative forms of i-adjectives",
+    "formation": "[い-adj] + い / [い-adj base] + くない"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "い-Adjectives Past",
+    "meaning": "Past affirmative and negative forms of i-adjectives",
+    "formation": "[い-adj base] + かった / くなかった"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "な-Adjectives Present",
+    "meaning": "Present affirmative and negative forms of na-adjectives",
+    "formation": "[な-adj] + な + Noun / [な-adj] + だ / じゃない"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "な-Adjectives Past",
+    "meaning": "Past affirmative and negative forms of na-adjectives",
+    "formation": "[な-adj] + だった / じゃなかった"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "が好き / が嫌い",
+    "meaning": "To like / to dislike",
+    "formation": "Noun + が + 好き / 嫌い"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "が上手 / が下手",
+    "meaning": "To be good at / poor at",
+    "formation": "Noun + が + 上手 / 下手"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "がある / がいる",
+    "meaning": "Existence of inanimate (ある) vs animate (いる)",
+    "formation": "Location + に + Noun + が + ある / いる"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "〜たい / たくない",
+    "meaning": "Want to do / do not want to do (first person desire)",
+    "formation": "Verb [ます stem] + たい / たくない"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "〜ましょう / 〜ましょうか",
+    "meaning": "Let's do / Shall we do?",
+    "formation": "Verb [ます stem] + ましょう / ましょうか"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "〜てください",
+    "meaning": "Please do (polite request)",
+    "formation": "Verb [て form] + ください"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "本 (Counter for Long Thin Objects)",
+    "meaning": "Counter for bottles, pens, trees, etc. (ほん, ぼん, ぽん)",
+    "formation": "Number + 本"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "枚 (Counter for Flat Objects)",
+    "meaning": "Counter for paper, tickets, plates, shirts (まい)",
+    "formation": "Number + 枚"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.3",
+    "title": "が (Subject Particle)",
+    "meaning": "Marks the grammatical subject or specific identifier",
+    "formation": "Noun + が + Predicate"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜ている (Progressive / State)",
+    "meaning": "Is doing (continuous action) or continuous state",
+    "formation": "Verb [て form] + いる / います"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜てはいけない",
+    "meaning": "Must not do (prohibition)",
+    "formation": "Verb [て form] + はいけない / はいけません"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜てもいい",
+    "meaning": "May do / allowed to do (permission)",
+    "formation": "Verb [て form] + もいい / もいいですか"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜から (Reason)",
+    "meaning": "Because, since (clause connector)",
+    "formation": "Clause [plain/polite] + から"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜てから",
+    "meaning": "After doing X, then Y",
+    "formation": "Verb 1 [て form] + から + Verb 2"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜ないでください",
+    "meaning": "Please do not do (negative request)",
+    "formation": "Verb [ない form] + でください"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜なければならない",
+    "meaning": "Must do / have to do (obligation)",
+    "formation": "Verb [ない stem] + なければならない / なくてはいけない"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜なくてもいい",
+    "meaning": "Do not have to do (lack of obligation)",
+    "formation": "Verb [ない stem] + なくてもいい / なくてもいいです"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "〜て (Connecting Sentences)",
+    "meaning": "And / and then (connecting clauses with te-form)",
+    "formation": "Verb [て form] / い-adj [くて] / な-adj [で]"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "まだ〜ていない",
+    "meaning": "Have not yet done",
+    "formation": "まだ + Verb [て form] + いない / いません"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "もう〜た",
+    "meaning": "Already did / have already done",
+    "formation": "もう + Verb [た form] / ました"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "匹 (Counter for Small Animals)",
+    "meaning": "Counter for cats, dogs, fish, insects (ひき, びき, ぴき)",
+    "formation": "Number + 匹"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "冊 (Counter for Books)",
+    "meaning": "Counter for books, magazines, notebooks (さつ)",
+    "formation": "Number + 冊"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.4",
+    "title": "台 (Counter for Machines/Vehicles)",
+    "meaning": "Counter for cars, computers, appliances (だい)",
+    "formation": "Number + 台"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜たことがある",
+    "meaning": "Have done before (past experience)",
+    "formation": "Verb [た form] + ことがある / あります"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜たり〜たりする",
+    "meaning": "Do things like X and Y (non-exhaustive list)",
+    "formation": "Verb 1 [た] + り + Verb 2 [た] + り + する"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜ほうがいい",
+    "meaning": "Had better do / should do (advice)",
+    "formation": "Verb [た form] + ほうがいい / Verb [ない form] + ほうがいい"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜つもりだ",
+    "meaning": "Plan to / intend to do",
+    "formation": "Verb [dictionary form / ない form] + つもりだ"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜ことができる",
+    "meaning": "Can do / be able to do (ability or possibility)",
+    "formation": "Verb [dictionary form] + ことができる"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜前に",
+    "meaning": "Before doing X",
+    "formation": "Verb [dictionary form] / Noun + の + 前に"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜た後で",
+    "meaning": "After doing X",
+    "formation": "Verb [た form] / Noun + の + 後で"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜すぎる",
+    "meaning": "Too much / excessively",
+    "formation": "Verb [ます stem] / い-adj [stem] / な-adj + すぎる"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜ながら",
+    "meaning": "While doing (simultaneous actions)",
+    "formation": "Verb [ます stem] + ながら"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "〜番 (Ordinal / Number)",
+    "meaning": "Number X / ranking counter (いちばん, にばん...)",
+    "formation": "Number + 番 (ばん)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "回 (Counter for Times / Occurrences)",
+    "meaning": "Counter for frequency / times (かい)",
+    "formation": "Number + 回"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "歳 / 才 (Counter for Age)",
+    "meaning": "Years old counter (さい)",
+    "formation": "Number + 歳 / 才"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.5",
+    "title": "度 (Counter for Degrees / Times)",
+    "meaning": "Degrees of temperature or occurrences (ど)",
+    "formation": "Number + 度"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "A より B のほうが",
+    "meaning": "B is more ... than A (comparison)",
+    "formation": "A より B のほうが + Adjective"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "の中で一番",
+    "meaning": "The most ... out of a category (superlative)",
+    "formation": "Category + の中で + [Question Word] + が一番 + Adj"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "〜と思う",
+    "meaning": "I think that... (opinion / supposition)",
+    "formation": "Plain form sentence + と思う / と思います"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "〜と言う",
+    "meaning": "To say that... (quotation)",
+    "formation": "Plain form sentence / Quote + と言う / と言いました"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "〜になる",
+    "meaning": "To become (change of state)",
+    "formation": "Noun / な-adj + になる / い-adj [く] + なる"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "〜にする",
+    "meaning": "To decide on / to make into",
+    "formation": "Noun + にする / にします"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "〜くする / 〜にする (Adverbial Make)",
+    "meaning": "To make something (adjective) / change a property",
+    "formation": "い-adj [く] + する / な-adj [に] + する"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "〜がほしい",
+    "meaning": "Want something (noun desire)",
+    "formation": "Noun + が + ほしい / ほしくない"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "どのくらい / どれくらい",
+    "meaning": "How long / how much? (approximate duration/quantity)",
+    "formation": "どのくらい / どれくらい (+ かかりますか)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "階 (Counter for Floors)",
+    "meaning": "Counter for building storeys/floors (かい, がい)",
+    "formation": "Number + 階"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "着 (Counter for Suits/Clothing)",
+    "meaning": "Counter for clothing items and suits (ちゃく)",
+    "formation": "Number + 着"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "足 (Counter for Pairs of Footwear)",
+    "meaning": "Counter for pairs of shoes and socks (そく, ぞく)",
+    "formation": "Number + 足"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.6",
+    "title": "軒 (Counter for Houses/Buildings)",
+    "meaning": "Counter for houses and establishments (けん, げん)",
+    "formation": "Number + 軒"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "あげる / くれる / もらう",
+    "meaning": "Giving and receiving physical objects",
+    "formation": "Giver は Receiver に Object を あげる / くれる / もらう"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "〜に行く / 来る",
+    "meaning": "Go / come in order to do (purpose of movement)",
+    "formation": "Verb [ます stem] / Noun + に + 行く / 来る"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "〜と (Natural Conditional)",
+    "meaning": "When / if (inevitable natural consequence)",
+    "formation": "Verb [dictionary form] + と + Result"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "で (By Means of / Tool)",
+    "meaning": "By means of, using, in (tool, vehicle, language)",
+    "formation": "Vehicle / Tool / Language + で"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "Period に Number 回",
+    "meaning": "Frequency (X times per period)",
+    "formation": "Time Period (e.g. 1週間に) + Number + 回"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "〜だけ",
+    "meaning": "Only, just (neutral limit)",
+    "formation": "Noun / Verb [plain] + だけ"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "〜しか〜ない",
+    "meaning": "Only, nothing but (with negative verb)",
+    "formation": "Noun + しか + Negative Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "〜や〜など",
+    "meaning": "Things like X and Y (non-exhaustive noun list)",
+    "formation": "Noun 1 + や + Noun 2 (+ など)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "〜とか〜とか",
+    "meaning": "Things like X, Y, etc. (casual listing)",
+    "formation": "Noun 1 + とか + Noun 2 + とか"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "杯 (Counter for Cups / Glasses)",
+    "meaning": "Counter for cups, glasses, bowls of drink/food (はい, ばい, ぱい)",
+    "formation": "Number + 杯"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "個 (Counter for Small Objects)",
+    "meaning": "Counter for small compact objects (こ)",
+    "formation": "Number + 個"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "曲 (Counter for Songs / Musical Pieces)",
+    "meaning": "Counter for songs and music tracks (きょく)",
+    "formation": "Number + 曲"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.7",
+    "title": "口 (Counter for Mouthfuls / Bites)",
+    "meaning": "Counter for bites, mouthfuls, or accounts (くち, ぐち)",
+    "formation": "Number + 口"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜ので",
+    "meaning": "Because / since (polite, objective reason)",
+    "formation": "Plain form (+ な for な-adj/noun) + ので"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜のに (Purpose / For)",
+    "meaning": "For the purpose of / in order to",
+    "formation": "Verb [dictionary form] + のに + 使う / 必要"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜方 (かた)",
+    "meaning": "Way of doing / how to do",
+    "formation": "Verb [ます stem] + 方 (かた)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜やすい / 〜にくい (N5 Intro)",
+    "meaning": "Easy to do / hard to do",
+    "formation": "Verb [ます stem] + やすい / にくい"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜がる (Third Person Want/Emotion)",
+    "meaning": "Seems to want / feels (3rd person)",
+    "formation": "たい [drop い] / がり + がる / がっている"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜そうだ (Conjecture - N5 Intro)",
+    "meaning": "Looks like / seems (visual assessment)",
+    "formation": "Verb [ます stem] / Adj [stem] + そうだ / そうです"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜だろう / でしょう",
+    "meaning": "Probably / right? (supposition/confirmation)",
+    "formation": "Plain form (+ drop だ for な-adj/noun) + だろう / でしょう"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜かもしれない (N5 Intro)",
+    "meaning": "Might / maybe / perhaps",
+    "formation": "Plain form (+ drop だ for な-adj/noun) + かもしれない"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "〜の (Nominalizer)",
+    "meaning": "The act of doing / one (turns verb into noun)",
+    "formation": "Verb [plain form] + の"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "こと (Nominalizer)",
+    "meaning": "Thing / matter / act (nominalizing verbs)",
+    "formation": "Verb [plain form] + こと"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "分 (Counter for Minutes)",
+    "meaning": "Minutes counter (ふん, ぷん)",
+    "formation": "Number + 分"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "時 (Counter for Hours / O'clock)",
+    "meaning": "Hours / o'clock counter (じ)",
+    "formation": "Number + 時"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.8",
+    "title": "日 (Counter for Days / Dates)",
+    "meaning": "Days of month / days duration counter (にち, か)",
+    "formation": "Number + 日"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "月 (Counter for Months / Month Names)",
+    "meaning": "Month names (がつ) vs months duration (かげつ)",
+    "formation": "Number + 月 / か月"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "年 (Counter for Years)",
+    "meaning": "Years counter (ねん)",
+    "formation": "Number + 年"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "何〜 (Interrogative Counter Prefix)",
+    "meaning": "How many [counter]? (何人, 何本, 何枚, 何時...)",
+    "formation": "何 + Counter"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "〜たり (Single Action Representative)",
+    "meaning": "Doing things like (single representative action)",
+    "formation": "Verb [た form] + りする"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "〜ても (Even If - N5 Intro)",
+    "meaning": "Even if / even though",
+    "formation": "Verb [て form] + も / Adj [くて] + も"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "〜たら (If / When - N5 Intro)",
+    "meaning": "If / when (past conditional)",
+    "formation": "Verb [た form] + ら"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "〜ば (Conditional - N5 Intro)",
+    "meaning": "If (standard provisional conditional)",
+    "formation": "Verb [ば form]"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "まだ〜 (Still / Not Yet)",
+    "meaning": "Still (affirmative) / not yet (negative)",
+    "formation": "まだ + Predicate"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "もう〜 (Already / More)",
+    "meaning": "Already / anymore (negative) / another (with counter)",
+    "formation": "もう + Predicate / もう + Counter"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "とても / たいへん",
+    "meaning": "Very / extremely (degree adverbs)",
+    "formation": "とても / たいへん + Adjective / Adverb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "少し / ちょっと",
+    "meaning": "A little / a bit",
+    "formation": "少し / ちょっと + Adjective / Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "ぜんぜん〜ない",
+    "meaning": "Not at all (with negative predicate)",
+    "formation": "ぜんぜん + Negative Predicate"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "あまり〜ない",
+    "meaning": "Not very / not much (with negative predicate)",
+    "formation": "あまり + Negative Predicate"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.9",
+    "title": "よく (Often / Well)",
+    "meaning": "Often (frequency) or well/skillfully (manner)",
+    "formation": "よく + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "時々 (ときどき)",
+    "meaning": "Sometimes (frequency adverb)",
+    "formation": "時々 + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "いつも",
+    "meaning": "Always / constantly (frequency adverb)",
+    "formation": "いつも + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "たいてい",
+    "meaning": "Usually / mostly (frequency adverb)",
+    "formation": "たいてい + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "一緒に (いっしょに)",
+    "meaning": "Together with someone",
+    "formation": "Person + と + 一緒に + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "一人で (ひとりで)",
+    "meaning": "By oneself / alone",
+    "formation": "一人で + Verb"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "みんな / 皆さん",
+    "meaning": "Everyone / all people (casual / polite)",
+    "formation": "みんな / 皆さん (+ で / は)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "全部 (ぜんぶ)",
+    "meaning": "All / everything",
+    "formation": "全部 + Verb / Noun + の + 全部"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "たくさん",
+    "meaning": "A lot / many / much",
+    "formation": "たくさん + Verb / Noun + が + たくさんある"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "〜など",
+    "meaning": "And so on / etc.",
+    "formation": "Noun (+ や Noun) + など"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "〜ぐらい / くらい",
+    "meaning": "About / approximately (quantity, duration)",
+    "formation": "Quantity / Duration + ぐらい / くらい"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "ごろ",
+    "meaning": "Around / about (specific point in time)",
+    "formation": "Point in Time (e.g. 3時) + ごろ"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "〜前に (Temporal Distance)",
+    "meaning": "X ago (e.g. 3 days ago)",
+    "formation": "Time Duration + 前に"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "〜後 (Temporal Later)",
+    "meaning": "X later / after X",
+    "formation": "Time Duration + 後 (ご / あと)"
+  },
+  {
+    "jlpt_level": "N5",
+    "bunpro_lesson_tag": "N5.10",
+    "title": "〜中 (ちゅう / じゅう)",
+    "meaning": "During / throughout / currently doing",
+    "formation": "Noun + 中"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜てしまう / ちゃう",
+    "meaning": "Do completely / regrettably / accidentally",
+    "formation": "Verb [て form] + しまう / ちゃう"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜ておく / とく",
+    "meaning": "Do something in advance / preparation",
+    "formation": "Verb [て form] + おく / とく"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜てみる",
+    "meaning": "Try doing something to see what happens",
+    "formation": "Verb [て form] + みる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜やすい / 〜にくい",
+    "meaning": "Easy to do / hard to do",
+    "formation": "Verb [ます stem] + やすい / にくい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜そうだ (Conjecture)",
+    "meaning": "Looks like, appears to be (visual conjecture)",
+    "formation": "Verb [ます stem] / Adj [stem] + そうだ / そうです"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜そうだ (Hearsay)",
+    "meaning": "I heard that..., reportedly...",
+    "formation": "Plain Form + そうだ / そうです"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜ようだ / みたいだ",
+    "meaning": "Seems like, looks like, resembles",
+    "formation": "Noun + の/ Verb plain + ようだ / Noun + みたいだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜らしい",
+    "meaning": "Seemingly, apparently / typical of",
+    "formation": "Plain Form / Noun + らしい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜すぎる (N4 Advanced)",
+    "meaning": "Overly / too much (adjective and verb combinations)",
+    "formation": "Adj / Verb + すぎる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜直す (なおす)",
+    "meaning": "Redo / do over again",
+    "formation": "Verb [ます stem] + 直す"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜始める (はじめる)",
+    "meaning": "Start doing / begin to",
+    "formation": "Verb [ます stem] + 始める"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜終わる (おわる)",
+    "meaning": "Finish doing",
+    "formation": "Verb [ます stem] + 終わる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜続ける (つづける)",
+    "meaning": "Continue doing",
+    "formation": "Verb [ます stem] + 続ける"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜出す (だす)",
+    "meaning": "Suddenly begin / burst out doing",
+    "formation": "Verb [ます stem] + 出す"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜がる (N4 Depth)",
+    "meaning": "Show outward emotion / appear to feel",
+    "formation": "Adj [stem] + がる / がっている"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜たばかり",
+    "meaning": "Have just finished doing (subjective recency)",
+    "formation": "Verb [た form] + ばかり"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜ところだ (About to / Doing / Just did)",
+    "meaning": "At the point of doing (dict: about to / ている: doing / た: just did)",
+    "formation": "Verb [dict / ている / た] + ところだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜てくる / 〜ていく",
+    "meaning": "Come to be / go on doing (spatial/temporal direction)",
+    "formation": "Verb [て form] + くる / いく"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.1",
+    "title": "〜てある",
+    "meaning": "Is done (state resulting from purposeful action)",
+    "formation": "Transitive Verb [て form] + ある"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "Potential Form (〜る / 〜られる)",
+    "meaning": "Can do / able to do (verb potential form)",
+    "formation": "Group 1: u → eる / Group 2: drop る + られる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "Passive Form (〜れる / 〜られる)",
+    "meaning": "Passive voice (to be done by someone)",
+    "formation": "Group 1: u → aれる / Group 2: drop る + られる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "Causative Form (〜せる / 〜させる)",
+    "meaning": "Make or let someone do something",
+    "formation": "Group 1: u → aせる / Group 2: drop る + させる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "Causative-Passive Form (〜させられる)",
+    "meaning": "Be made / forced to do something",
+    "formation": "Group 1: u → aせられる / Group 2: drop る + させられる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜たら (Conditional)",
+    "meaning": "If / when (hypothetical or temporal condition)",
+    "formation": "Verb/Adj [Past plain た] + ら"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜ば (Conditional Form)",
+    "meaning": "If (general conditional rule)",
+    "formation": "Verb: u → eば / い-adj: ければ / な-adj & Noun: ならば"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜なら (Contextual Conditional)",
+    "meaning": "If it is the case that... / as for...",
+    "formation": "Noun / Verb [plain] + なら"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜ても / でも (Even If)",
+    "meaning": "Even if, even though",
+    "formation": "Verb/Adj [て form] + も / Noun + でも"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜てもかまわない",
+    "meaning": "Do not mind if / it is okay even if",
+    "formation": "Verb [て form] + もかまわない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜なくてもかまわない",
+    "meaning": "It is okay even if not done",
+    "formation": "Verb [ない stem] + なくてもかまわない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜なければいけない",
+    "meaning": "Must do (obligation / necessity)",
+    "formation": "Verb [ない stem] + なければいけない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜なくてはならない",
+    "meaning": "Must do (strict requirement)",
+    "formation": "Verb [ない stem] + なくてはならない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜ないといけない",
+    "meaning": "Have to do (casual requirement)",
+    "formation": "Verb [ない form] + といけない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜ないとだめだ",
+    "meaning": "Must do / no good if not done",
+    "formation": "Verb [ない form] + とだめだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜てはいけませんか",
+    "meaning": "May I not? / Is it forbidden?",
+    "formation": "Verb [て form] + はいけませんか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜てもよろしいですか",
+    "meaning": "May I please? (polite permission)",
+    "formation": "Verb [て form] + もよろしいですか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜ばよかった",
+    "meaning": "Should have done / wish I had done",
+    "formation": "Verb [ば form] + よかった"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜なければよかった",
+    "meaning": "Wish I had not done",
+    "formation": "Verb [なければ] + よかった"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.2",
+    "title": "〜たらどうですか",
+    "meaning": "Why don't you? / How about doing?",
+    "formation": "Verb [た form] + らどうですか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜のに (Although / Even though)",
+    "meaning": "Even though, despite (surprise or frustration)",
+    "formation": "Plain form (+ な for な-adj/noun) + のに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜ために (In order to / Because of)",
+    "meaning": "In order to (purpose) or because of (cause)",
+    "formation": "Verb [dictionary form] / Noun + の + ために"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜ように (In order that / So that)",
+    "meaning": "So that / in order to reach a state (potential/non-volitional)",
+    "formation": "Verb [potential / non-volitional plain] + ように"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜ようになる",
+    "meaning": "Come to be able to / reach a point where",
+    "formation": "Verb [potential / dictionary form] + ようになる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜ようにする",
+    "meaning": "Make an effort to / make sure to do",
+    "formation": "Verb [dictionary / ない form] + ようにする"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜はずだ",
+    "meaning": "Should be / expected to be (logical expectation)",
+    "formation": "Plain form (+ な for な-adj / + の for Noun) + はずだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜はずがない",
+    "meaning": "Cannot be / impossible that (strong conviction)",
+    "formation": "Plain form (+ な for な-adj / + の for Noun) + はずがない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜かもしれない / かも",
+    "meaning": "Might, may, perhaps (possibility)",
+    "formation": "Plain form (+ drop だ for な-adj/noun) + かもしれない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜し〜し (Listing Reasons)",
+    "meaning": "Not only ... but also ... (listing multiple reasons)",
+    "formation": "Clause [plain form] + し + Clause [plain form] + し"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜ばかり (Just Did / Only)",
+    "meaning": "Have just finished doing / doing nothing but",
+    "formation": "Verb [た form] + ばかり / Noun + ばかり"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜ばかりいる",
+    "meaning": "Do nothing but / always doing",
+    "formation": "Verb [て form] + ばかりいる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜がる (N4 Conjugations)",
+    "meaning": "Acts like / shows feelings of",
+    "formation": "い-adj [drop い] / たい [drop い] + がる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜間 / 〜間に",
+    "meaning": "While / during the entire time (間) vs at some point during (間に)",
+    "formation": "Verb [ている] / Noun + の + 間 / 間に"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜ずに / 〜ないで",
+    "meaning": "Without doing X",
+    "formation": "Verb [ない stem] + ずに (する → せずに) / ないで"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜おかげで / 〜せいで",
+    "meaning": "Thanks to (positive) vs Because of (negative blame)",
+    "formation": "Plain form (+ な for な-adj / + の for Noun) + おかげで / せいで"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜通りに (どおりに)",
+    "meaning": "In the same way as / according to",
+    "formation": "Verb [dict / た] / Noun + の + 通りに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜によって / によると",
+    "meaning": "By / depending on (によって) vs According to (によると)",
+    "formation": "Noun + によって / によると"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜について",
+    "meaning": "About / regarding / concerning",
+    "formation": "Noun + について"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.3",
+    "title": "〜に対して (たいして)",
+    "meaning": "Towards / in contrast to / regarding",
+    "formation": "Noun + に対して"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜てあげる / てくれる / てもらう",
+    "meaning": "Do favor for someone / have someone do for you",
+    "formation": "Verb [て form] + あげる / くれる / もらう"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜てさしあげる",
+    "meaning": "Humbly do a favor for a superior",
+    "formation": "Verb [て form] + さしあげる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜てくださる",
+    "meaning": "Superior kindly does a favor for me",
+    "formation": "Verb [て form] + くださる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜ていただく",
+    "meaning": "Humbly receive an action from a superior",
+    "formation": "Verb [て form] + いただく"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜てやる",
+    "meaning": "Do a favor for someone younger/pet/plant",
+    "formation": "Verb [て form] + やる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "尊敬語 (Sonkeigo Foundations)",
+    "meaning": "Respectful form (elevating subject)",
+    "formation": "お + Verb [ます stem] + になる / Special Verbs"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "謙譲語 (Kenjougo Foundations)",
+    "meaning": "Humble form (lowering self)",
+    "formation": "お + Verb [ます stem] + する / Special Verbs"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "丁寧語 (Teineigo Polish)",
+    "meaning": "Polite expressions (ございます, でございます)",
+    "formation": "Noun + でございます / ございます"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜ていただけませんか",
+    "meaning": "Could you please do for me? (polite request)",
+    "formation": "Verb [て form] + いただけませんか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜てくださいませんか",
+    "meaning": "Would you please be so kind as to?",
+    "formation": "Verb [て form] + くださいませんか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜てくれないか / てもらえないか",
+    "meaning": "Won't you do this for me? (casual-polite request)",
+    "formation": "Verb [て form] + くれないか / もらえないか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "Volitional Form (〜よう / 〜おう)",
+    "meaning": "Let's / I will (casual volitional)",
+    "formation": "Group 1: u → ou / Group 2: drop る + よう"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜ようと思う / 思っている",
+    "meaning": "I am thinking of / planning to (volitional intent)",
+    "formation": "Verb [volitional form] + と思う / 思っている"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "Imperative Form (〜え / 〜ろ)",
+    "meaning": "Do it! (direct command / orders)",
+    "formation": "Group 1: u → e / Group 2: drop る + ろ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "Prohibitive Form (〜な)",
+    "meaning": "Do not do! (strict prohibition)",
+    "formation": "Verb [dictionary form] + な"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜なさい",
+    "meaning": "Do! (command from parent/teacher)",
+    "formation": "Verb [ます stem] + なさい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜な (Sentence Ender - Casual)",
+    "meaning": "Don't... (negative) or I wonder / emotional remark",
+    "formation": "Sentence + な"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜かな / かしら",
+    "meaning": "I wonder... (casual question to oneself)",
+    "formation": "Plain form + かな / かしら"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.4",
+    "title": "〜かい / 〜だい",
+    "meaning": "Casual question markers (male/friendly)",
+    "formation": "Sentence + かい / だい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜みたいに / 〜みたいだ",
+    "meaning": "Like, resembling, as if",
+    "formation": "Noun / Verb [plain] + みたいに (adv) / みたいだ (pred)"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜らしい (Typical / Sound like)",
+    "meaning": "Typical of / seems like",
+    "formation": "Noun + らしい / Verb [plain] + らしい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜っぽい",
+    "meaning": "-ish, -like, prone to",
+    "formation": "Noun / Verb [ます stem] / Adj [stem] + っぽい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜がる / がり (Personality Tendency)",
+    "meaning": "Tendency to feel / sensitive to (e.g. 寒がり, 怖がり)",
+    "formation": "Adj [stem] + がり"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜がる (3rd Person Observations)",
+    "meaning": "Appears to feel (e.g. 痛がる, 恥ずかしがる)",
+    "formation": "Adj [stem] + がる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜てごらん",
+    "meaning": "Try doing (encouraging someone to try)",
+    "formation": "Verb [て form] + ごらん"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜てちょうだい",
+    "meaning": "Please do (gentle request / female or maternal speech)",
+    "formation": "Verb [て form] + ちょうだい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜てたまらない",
+    "meaning": "Extremely / can't help but (unbearable feeling)",
+    "formation": "Verb [て form] / Adj [くて] + たまらない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜てしょうがない / しかたがない",
+    "meaning": "Can't help but feel / there's no helping it",
+    "formation": "Verb [て form] / Adj [くて] + しょうがない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜てよかった",
+    "meaning": "I am glad that I did",
+    "formation": "Verb [て form] + よかった"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜なくてよかった",
+    "meaning": "I am glad that I didn't have to",
+    "formation": "Verb [ない stem] + なくてよかった"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜てすみません / ありがとうございました",
+    "meaning": "Sorry for doing / Thank you for doing",
+    "formation": "Verb [て form] + すみません / ありがとう"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜てばかりはいられない",
+    "meaning": "Cannot just keep on doing",
+    "formation": "Verb [て form] + ばかりはいられない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜さえ〜ば",
+    "meaning": "If only... then...",
+    "formation": "Noun + さえ + Verb [ば form]"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜こそ",
+    "meaning": "Precisely, definitely (emphasis)",
+    "formation": "Noun / Particle + こそ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜なんか / 〜なんて",
+    "meaning": "Things like / such a thing as (downplaying/surprise)",
+    "formation": "Noun / Verb [plain] + なんか / なんて"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜くらい / ぐらい (Degree)",
+    "meaning": "To the extent that / at least",
+    "formation": "Plain form / Noun + くらい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜ほど",
+    "meaning": "To the extent that / not as ... as (in negative)",
+    "formation": "Plain form / Noun + ほど"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.5",
+    "title": "〜ほど〜ない",
+    "meaning": "Not as ... as (comparison)",
+    "formation": "A は B ほど + Negative Adj"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜まま",
+    "meaning": "As is / remaining in that state",
+    "formation": "Verb [た/ない] / Noun + の + まま"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜っぱなし",
+    "meaning": "Left in a state / left unattended",
+    "formation": "Verb [ます stem] + っぱなし"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜きり",
+    "meaning": "Only / since ... and not again",
+    "formation": "Noun / Verb [た form] + きり"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜ふりをする",
+    "meaning": "Pretend to / feign",
+    "formation": "Plain form (+ な for な-adj) + ふりをする"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜わりに (は)",
+    "meaning": "Considering that / for a...",
+    "formation": "Plain form / Noun + の + わりに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜くせに",
+    "meaning": "Even though / yet (contemptuous/critical)",
+    "formation": "Plain form (+ な/の) + くせに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜たところで",
+    "meaning": "Even if ... (negative outcome)",
+    "formation": "Verb [た form] + ところで"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜たとたん (に)",
+    "meaning": "Just as / the instant that",
+    "formation": "Verb [た form] + とたん (に)"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜最中に (さいちゅうに)",
+    "meaning": "In the middle of / right when",
+    "formation": "Verb [ている] / Noun + の + 最中に"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜うちに / ないうちに",
+    "meaning": "While (state lasts) / before (state changes)",
+    "formation": "Verb [dict/ている/ない] / Noun + の + うちに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜間に (あいだに)",
+    "meaning": "While / during",
+    "formation": "Verb [ている] / Noun + の + 間に"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜はじめ / 〜おわり",
+    "meaning": "Beginning of / end of doing",
+    "formation": "Verb [ます stem] + はじめ / おわり"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜かける / かけの",
+    "meaning": "In the middle of doing / half-done",
+    "formation": "Verb [ます stem] + かける / かけの + Noun"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜きる / きれない",
+    "meaning": "Do completely / cannot finish completely",
+    "formation": "Verb [ます stem] + きる / きれない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜通す (とおす)",
+    "meaning": "Carry through to the end / do all the way",
+    "formation": "Verb [ます stem] + 通す"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜抜く (ぬく)",
+    "meaning": "Do completely through hardship",
+    "formation": "Verb [ます stem] + 抜く"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜合う (あう)",
+    "meaning": "Do together / with each other (mutual)",
+    "formation": "Verb [ます stem] + 合う"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜込む (こむ)",
+    "meaning": "Go deep into / do thoroughly",
+    "formation": "Verb [ます stem] + 込む"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.6",
+    "title": "〜出す (だす - Outward)",
+    "meaning": "Put out / take out / begin outwards",
+    "formation": "Verb [ます stem] + 出す"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜んだ / のだ (Explanation)",
+    "meaning": "Expressing explanation, reason, or emphasis",
+    "formation": "Plain form (+ な for な-adj/noun) + んだ / のだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜んじゃない / のではないか",
+    "meaning": "Isn't it that...? / I suspect that...",
+    "formation": "Plain form + んじゃない / のではないか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜わけだ",
+    "meaning": "Naturally / that is why / for that reason",
+    "formation": "Plain form (+ な for な-adj) + わけだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜わけがない",
+    "meaning": "There is no reason why / impossible that",
+    "formation": "Plain form (+ な for な-adj) + わけがない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜わけではない",
+    "meaning": "It doesn't mean that / not necessarily",
+    "formation": "Plain form (+ な for な-adj) + わけではない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜わけにはいかない",
+    "meaning": "Cannot afford to / must not (social obligation)",
+    "formation": "Verb [dictionary form] + わけにはいかない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜ないわけにはいかない",
+    "meaning": "Must do / cannot avoid doing",
+    "formation": "Verb [ない form] + わけにはいかない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜ということだ",
+    "meaning": "It means that / I heard that",
+    "formation": "Plain form + ということだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜というのは",
+    "meaning": "The meaning of X is / as for...",
+    "formation": "Noun / Quote + というのは"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜という (Named / Called)",
+    "meaning": "Called / named / which says",
+    "formation": "Name + という + Noun"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜といった",
+    "meaning": "Such ... as / like",
+    "formation": "Noun 1, Noun 2 + といった + Category"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜について (は)",
+    "meaning": "Regarding / about",
+    "formation": "Noun + について (は)"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜にとって",
+    "meaning": "For / to (from the standpoint of)",
+    "formation": "Noun + にとって"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜として",
+    "meaning": "As / in the role or capacity of",
+    "formation": "Noun + として"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜とともに",
+    "meaning": "Together with / along with (formal)",
+    "formation": "Noun / Verb [dict] + とともに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜にしたがって",
+    "meaning": "As / in accordance with / following",
+    "formation": "Verb [dict] / Noun + にしたがって"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜につれて",
+    "meaning": "As X happens, Y also happens (proportional change)",
+    "formation": "Verb [dict] / Noun + につれて"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜に伴って (にともなって)",
+    "meaning": "Along with / as a consequence of",
+    "formation": "Verb [dict] / Noun + に伴って"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.7",
+    "title": "〜において / における",
+    "meaning": "In / at / on (formal locative)",
+    "formation": "Noun + において / における + Noun"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜に比べて (にくらべて)",
+    "meaning": "Compared to / in comparison with",
+    "formation": "Noun + に比べて"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜に加えて (にくわえて)",
+    "meaning": "In addition to",
+    "formation": "Noun + に加えて"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜に関して (にかんして)",
+    "meaning": "Regarding / with reference to",
+    "formation": "Noun + に関して"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜に反して (にはんして)",
+    "meaning": "Contrary to / against expectations",
+    "formation": "Noun + に反して"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜に基づいて (にもとづいて)",
+    "meaning": "Based on / on the basis of",
+    "formation": "Noun + に基づいて"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜を込めて (をこめて)",
+    "meaning": "With all one's heart / filled with",
+    "formation": "Noun + を込めて"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜を通じて / を通して (をつうじて)",
+    "meaning": "Through / via / throughout the period",
+    "formation": "Noun + を通じて / を通して"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜をめぐって",
+    "meaning": "Concerning / surrounding (dispute, topic)",
+    "formation": "Noun + をめぐって"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜をはじめ (として)",
+    "meaning": "Starting with / such as (representative example)",
+    "formation": "Noun + をはじめ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜を中心に (をちゅうしんに)",
+    "meaning": "Centering on / mainly focused on",
+    "formation": "Noun + を中心に"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜をもとに (して)",
+    "meaning": "Based on / taking as material",
+    "formation": "Noun + をもとに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜をきっかけに (して)",
+    "meaning": "With X as a trigger / turning point",
+    "formation": "Noun + をきっかけに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜を契機に (をけいきに)",
+    "meaning": "Taking the opportunity of / as a chance",
+    "formation": "Noun + を契機に"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜を問わず (をとわず)",
+    "meaning": "Regardless of / without question of",
+    "formation": "Noun + を問わず"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜にかかわらず",
+    "meaning": "Regardless of / irrespective of",
+    "formation": "Noun / Verb [plain] + にかかわらず"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜にもかかわらず",
+    "meaning": "Despite / in spite of the fact that",
+    "formation": "Plain form (+ な/である) + にもかかわらず"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜わりに (は - Nuance)",
+    "meaning": "Although / considering",
+    "formation": "Plain form + わりに"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜にしては",
+    "meaning": "For a / considering that it is",
+    "formation": "Noun / Verb [plain] + にしては"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.8",
+    "title": "〜にしても",
+    "meaning": "Even if / even supposing that",
+    "formation": "Plain form + にしても"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜に違いない (にちがいない)",
+    "meaning": "Must be / undoubtedly / I'm certain that",
+    "formation": "Plain form (+ drop だ for な-adj/noun) + に違いない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜にすぎない",
+    "meaning": "Nothing more than / merely / just",
+    "formation": "Plain form (+ である/な) + にすぎない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜にほかならない",
+    "meaning": "Nothing other than / none other than",
+    "formation": "Noun + にほかならない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜に決まっている",
+    "meaning": "Bound to / definitely will / obviously",
+    "formation": "Plain form (+ drop だ) + に決まっている"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜に相違ない (にそういない)",
+    "meaning": "Without doubt / certainly (formal)",
+    "formation": "Plain form + に相違ない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜恐れがある (おそれがある)",
+    "meaning": "There is a fear/risk/danger that",
+    "formation": "Verb [dict] / Noun + の + 恐れがある"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜かねない",
+    "meaning": "Could happen / might result in (negative risk)",
+    "formation": "Verb [ます stem] + かねない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜かねる",
+    "meaning": "Unable to / cannot do (formal refusal)",
+    "formation": "Verb [ます stem] + かねる"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜がたい",
+    "meaning": "Hard to / difficult to (psychologically/conceptually)",
+    "formation": "Verb [ます stem] + がたい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜づらい",
+    "meaning": "Difficult to do / painful to do",
+    "formation": "Verb [ます stem] + づらい"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜っこない",
+    "meaning": "No way that / definitely cannot (casual conviction)",
+    "formation": "Verb [ます stem] + っこない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜げ (Appearance / Vibe)",
+    "meaning": "Giving an appearance of / seeming",
+    "formation": "Adj [stem] / Verb [stem] + げ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜気味 (ぎみ)",
+    "meaning": "A touch of / slightly feeling like (e.g. 風邪気味)",
+    "formation": "Noun / Verb [ます stem] + 気味"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜がち",
+    "meaning": "Tendency to / prone to (often undesirable)",
+    "formation": "Noun / Verb [ます stem] + がち"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜向き (むき)",
+    "meaning": "Suitable for / aimed at",
+    "formation": "Noun + 向き"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜向け (むけ)",
+    "meaning": "Designed for / intended for (deliberate target)",
+    "formation": "Noun + 向け"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜だらけ",
+    "meaning": "Full of / covered with (undesirable things)",
+    "formation": "Noun + だらけ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜まみれ",
+    "meaning": "Smeared with / covered in (mud, blood, sweat)",
+    "formation": "Noun + まみれ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.9",
+    "title": "〜ずくめ",
+    "meaning": "Entirely of / nothing but (good/bad events)",
+    "formation": "Noun + ずくめ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜ざるを得ない (ざるをえない)",
+    "meaning": "Cannot help but do / forced to do",
+    "formation": "Verb [ない stem] + ざるを得ない (する → せざるを得ない)"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜やまない",
+    "meaning": "Never cease to / genuinely hope/pray from the heart",
+    "formation": "Verb [て form] + やまない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜に耐えない (にたえない)",
+    "meaning": "Unbearable / overwhelmed by (emotion/joy/grief)",
+    "formation": "Noun / Verb [dict] + に耐えない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜に値する (にあたいする)",
+    "meaning": "Worthy of / deserving of",
+    "formation": "Verb [dict] / Noun + に値する"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜に足る (にたる)",
+    "meaning": "Sufficient to / worthy of",
+    "formation": "Verb [dict] / Noun + に足る"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜極まる / 極まりない (きわまる)",
+    "meaning": "Extremely / boundless in degree",
+    "formation": "な-adj [stem] + 極まる / 極まりない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜限りだ (かぎりだ)",
+    "meaning": "Feel intensely / extremely happy/sad",
+    "formation": "い-adj / な-adj + な + 限りだ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜始末だ (しまつだ)",
+    "meaning": "Ended up in the regrettable state of",
+    "formation": "Verb [plain] + 始末だ"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜思いをする (おもいをする)",
+    "meaning": "Experience a feeling of / feel",
+    "formation": "Adj / Noun + 思いをする"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜甲斐がある (かいがある)",
+    "meaning": "Worth the effort of / fruitful",
+    "formation": "Verb [た/ます stem] / Noun + の + 甲斐がある"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜甲斐がない (かいがない)",
+    "meaning": "In vain / not worth the effort",
+    "formation": "Verb [た] / Noun + の + 甲斐がない"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜折に (おりに)",
+    "meaning": "On the occasion of / when",
+    "formation": "Verb [plain] / Noun + の + 折に"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜際 (に) (さいに)",
+    "meaning": "When / on the occasion of (formal)",
+    "formation": "Verb [plain] / Noun + の + 際 (に)"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜途端 (に) (とたんに)",
+    "meaning": "The moment that / just as",
+    "formation": "Verb [た form] + 途端 (に)"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜拍子に (ひょうしに)",
+    "meaning": "By chance / at the instant of (accidental trigger)",
+    "formation": "Verb [た] / Noun + の + 拍子に"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜反面 (はんめん)",
+    "meaning": "On the other hand / while on one side",
+    "formation": "Plain form (+ な/である) + 反面"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜一方 (で) (いっぽうで)",
+    "meaning": "On one hand ... on the other hand",
+    "formation": "Plain form (+ な/である) + 一方で"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜ばかりか / ばかりでなく",
+    "meaning": "Not only ... but also (formal)",
+    "formation": "Plain form (+ な/である) + ばかりか"
+  },
+  {
+    "jlpt_level": "N4",
+    "bunpro_lesson_tag": "N4.10",
+    "title": "〜のみならず",
+    "meaning": "Not only ... but also (literary)",
+    "formation": "Plain form + のみならず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜に関して (にかんして)",
+    "meaning": "Regarding / concerning / with reference to",
+    "formation": "Noun + に関して / に関する + Noun"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜に対して (にたいして)",
+    "meaning": "Towards / in contrast to / regarding",
+    "formation": "Noun + に対して / に対する + Noun"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜について (は)",
+    "meaning": "About / on the topic of",
+    "formation": "Noun + について"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜にとって",
+    "meaning": "To / for (from the viewpoint of)",
+    "formation": "Noun + にとって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜として (は)",
+    "meaning": "As / in the capacity of",
+    "formation": "Noun + として"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜によって / による",
+    "meaning": "By means of / due to / depending on",
+    "formation": "Noun + によって / による + Noun"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜によると / によれば",
+    "meaning": "According to (hearsay source)",
+    "formation": "Noun + によると / によれば"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜を通じて / を通して (をつうじて)",
+    "meaning": "Through / via / throughout the entire period",
+    "formation": "Noun + を通じて / を通して"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜をめぐって",
+    "meaning": "Concerning / disputing around a topic",
+    "formation": "Noun + をめぐって / をめぐる + Noun"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜をはじめ (として)",
+    "meaning": "Starting with / such as (prime example)",
+    "formation": "Noun + をはじめ (として)"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜を中心として (をちゅうしんとして)",
+    "meaning": "Centering around / mainly focused on",
+    "formation": "Noun + を中心として"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜をもとに (して)",
+    "meaning": "Based on / created from raw materials or ideas",
+    "formation": "Noun + をもとに (して)"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜をきっかけとして",
+    "meaning": "Taking X as a trigger / opportunity",
+    "formation": "Noun + をきっかけとして"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜を契機として (をけいきとして)",
+    "meaning": "With X as a turning point",
+    "formation": "Noun + を契機として"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜を対象に (をたいしょうに)",
+    "meaning": "Targeting / aimed at (audience/group)",
+    "formation": "Noun + を対象に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜を問わず (をとわず)",
+    "meaning": "Regardless of / without distinction of",
+    "formation": "Noun + を問わず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜にかかわらず",
+    "meaning": "Regardless of / whether or not",
+    "formation": "Noun / Verb [plain] + にかかわらず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜にもかかわらず",
+    "meaning": "Despite / in spite of the fact that",
+    "formation": "Plain form (+ である/な) + にもかかわらず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜わりに (は)",
+    "meaning": "Considering that / although surprisingly",
+    "formation": "Plain form / Noun + の + わりに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜にしては",
+    "meaning": "For a... / considering that it is",
+    "formation": "Noun / Verb [plain] + にしては"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜にしても",
+    "meaning": "Even if / even supposing that",
+    "formation": "Plain form + にしても"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.1",
+    "title": "〜にしろ / にせよ",
+    "meaning": "Whether ... or ... / even if",
+    "formation": "Plain form + にしろ / にせよ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜わけだ",
+    "meaning": "Naturally / that is why / no wonder",
+    "formation": "Plain form (+ な for な-adj) + わけだ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜わけがない",
+    "meaning": "There is no reason why / impossible that",
+    "formation": "Plain form (+ な for な-adj) + わけがない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜わけではない",
+    "meaning": "It doesn't mean that / not necessarily",
+    "formation": "Plain form (+ な for な-adj) + わけではない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜わけにはいかない",
+    "meaning": "Cannot afford to / impossible due to social reason",
+    "formation": "Verb [dictionary form] + わけにはいかない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜ないわけにはいかない",
+    "meaning": "Must do / cannot avoid doing",
+    "formation": "Verb [ない form] + わけにはいかない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜はずだ",
+    "meaning": "Should be / expected to be",
+    "formation": "Plain form (+ な/の) + はずだ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜はずがない",
+    "meaning": "Cannot possibly be / out of the question",
+    "formation": "Plain form (+ な/の) + はずがない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜に違いない (にちがいない)",
+    "meaning": "Must be / undoubtedly / I'm certain",
+    "formation": "Plain form (+ drop だ) + に違いない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜に決まっている",
+    "meaning": "Bound to / obviously will",
+    "formation": "Plain form (+ drop だ) + に決まっている"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜にすぎない",
+    "meaning": "Nothing more than / merely / just",
+    "formation": "Plain form (+ である) + にすぎない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜にほかならない",
+    "meaning": "Nothing other than / precisely",
+    "formation": "Noun + にほかならない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜に相違ない (にそういない)",
+    "meaning": "Without a doubt (formal conviction)",
+    "formation": "Plain form + に相違ない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜恐れがある (おそれがある)",
+    "meaning": "There is a fear / risk that",
+    "formation": "Verb [dict] / Noun + の + 恐れがある"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜かねない",
+    "meaning": "Might happen / could result in bad outcome",
+    "formation": "Verb [ます stem] + かねない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜かねる",
+    "meaning": "Unable to / cannot do (formal refusal)",
+    "formation": "Verb [ます stem] + かねる"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜がたい",
+    "meaning": "Hard to / difficult to (emotionally/conceptually)",
+    "formation": "Verb [ます stem] + がたい"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜づらい",
+    "meaning": "Difficult / unpleasant to do",
+    "formation": "Verb [ます stem] + づらい"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜っこない",
+    "meaning": "No way that / definitely cannot happen",
+    "formation": "Verb [ます stem] + っこない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜げ",
+    "meaning": "Giving a feeling or appearance of",
+    "formation": "Adj [stem] + げ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜気味 (ぎみ)",
+    "meaning": "A touch of / somewhat feeling",
+    "formation": "Noun / Verb [ます stem] + 気味"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜がち",
+    "meaning": "Tendency to / prone to",
+    "formation": "Noun / Verb [ます stem] + がち"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.2",
+    "title": "〜向き / 向け",
+    "meaning": "Suitable for (向き) vs Aimed at (向け)",
+    "formation": "Noun + 向き / 向け"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜ざるを得ない",
+    "meaning": "Cannot help but do / forced to do",
+    "formation": "Verb [ない stem] + ざるを得ない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜やまない",
+    "meaning": "Never cease to / deeply feel",
+    "formation": "Verb [て form] + やまない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜に耐えない",
+    "meaning": "Unbearable / overwhelmed by emotion",
+    "formation": "Noun / Verb [dict] + に耐えない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜に値する (にあたいする)",
+    "meaning": "Worthy of / deserving of",
+    "formation": "Verb [dict] / Noun + に値する"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜に足る (にたる)",
+    "meaning": "Sufficient to / worth doing",
+    "formation": "Verb [dict] / Noun + に足る"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜極まる / 極まりない",
+    "meaning": "Extremely / utterly",
+    "formation": "な-adj [stem] + 極まる"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜限りだ",
+    "meaning": "Feel intensely (emotion)",
+    "formation": "い-adj / な-adj + な + 限りだ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜始末だ (しまつだ)",
+    "meaning": "Ended up in the bad state of",
+    "formation": "Verb [plain] + 始末だ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜思いをする",
+    "meaning": "Have an experience of / feel",
+    "formation": "Adj + 思いをする"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜甲斐がある / ない",
+    "meaning": "Worth the effort / in vain",
+    "formation": "Verb [た] / Noun + の + 甲斐がある / ない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜折に (おりに)",
+    "meaning": "On the occasion of / when",
+    "formation": "Verb [plain] / Noun + の + 折に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜際 (に)",
+    "meaning": "When / at the time of",
+    "formation": "Verb [plain] / Noun + の + 際 (に)"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜途端 (に)",
+    "meaning": "The moment that / just as",
+    "formation": "Verb [た form] + 途端 (に)"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜拍子に",
+    "meaning": "By chance / at the instant of trigger",
+    "formation": "Verb [た] / Noun + の + 拍子に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜反面 (はんめん)",
+    "meaning": "On the other hand",
+    "formation": "Plain form + 反面"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜一方 (で)",
+    "meaning": "On one hand ... on the other hand",
+    "formation": "Plain form + 一方で"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜ばかりか / ばかりでなく",
+    "meaning": "Not only ... but also",
+    "formation": "Plain form + ばかりか"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜のみならず",
+    "meaning": "Not only ... but also (formal)",
+    "formation": "Plain form + のみならず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜だけでなく / 〜ばかりでなく",
+    "meaning": "Not only ... but also",
+    "formation": "Plain form + だけでなく"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜はもちろん / 〜はもとより",
+    "meaning": "Not to mention / of course ... but also",
+    "formation": "Noun + はもちろん / はもとより"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜さえ (も)",
+    "meaning": "Even ... (extreme example)",
+    "formation": "Noun + さえ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.3",
+    "title": "〜すら (も)",
+    "meaning": "Even ... (literary extreme)",
+    "formation": "Noun + すら"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜次第",
+    "meaning": "しだい - As soon as / depending on",
+    "formation": "Verb / Noun / Adj + 〜次第"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜次第で",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜次第で"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜たところで",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜たところで"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜たとたん",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜たとたん"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜最中に",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜最中に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜うちに",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜うちに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜間に",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜間に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜はじめ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜はじめ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜かける",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜かける"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜きる",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜きる"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜通す",
+    "meaning": "とおす",
+    "formation": "Verb / Noun / Adj + 〜通す"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜抜く",
+    "meaning": "ぬく",
+    "formation": "Verb / Noun / Adj + 〜抜く"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜合う",
+    "meaning": "あう",
+    "formation": "Verb / Noun / Adj + 〜合う"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜込む",
+    "meaning": "こむ",
+    "formation": "Verb / Noun / Adj + 〜込む"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜直す",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜直す"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜つつ",
+    "meaning": "While doing",
+    "formation": "Verb / Noun / Adj + 〜つつ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜つつある",
+    "meaning": "In the process of",
+    "formation": "Verb / Noun / Adj + 〜つつある"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜一方だ",
+    "meaning": "Keep on changing",
+    "formation": "Verb / Noun / Adj + 〜一方だ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜ばかりだ",
+    "meaning": "Only continuing to",
+    "formation": "Verb / Noun / Adj + 〜ばかりだ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜とともに",
+    "meaning": "Along with change",
+    "formation": "Verb / Noun / Adj + 〜とともに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜にしたがって",
+    "meaning": "In accordance with",
+    "formation": "Verb / Noun / Adj + 〜にしたがって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.4",
+    "title": "〜につれて",
+    "meaning": "Proportionally as",
+    "formation": "Verb / Noun / Adj + 〜につれて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に伴って",
+    "meaning": "にともなって",
+    "formation": "Verb / Noun / Adj + 〜に伴って"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に応じて",
+    "meaning": "におうじて",
+    "formation": "Verb / Noun / Adj + 〜に応じて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に応えて",
+    "meaning": "にこたえて",
+    "formation": "Verb / Noun / Adj + 〜に応えて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に沿って",
+    "meaning": "にそって",
+    "formation": "Verb / Noun / Adj + 〜に沿って"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に基づいて",
+    "meaning": "にもとづいて",
+    "formation": "Verb / Noun / Adj + 〜に基づいて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に即して",
+    "meaning": "にそくして",
+    "formation": "Verb / Noun / Adj + 〜に即して"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に比べて",
+    "meaning": "にくらべて",
+    "formation": "Verb / Noun / Adj + 〜に比べて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に加えて",
+    "meaning": "にくわえて",
+    "formation": "Verb / Noun / Adj + 〜に加えて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に反して",
+    "meaning": "にはんして",
+    "formation": "Verb / Noun / Adj + 〜に反して"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に先立って",
+    "meaning": "にさきだって",
+    "formation": "Verb / Noun / Adj + 〜に先立って"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜を込めて",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜を込めて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜を通じて",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜を通じて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜をめぐって",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜をめぐって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜を皮切りに",
+    "meaning": "をかわきりに",
+    "formation": "Verb / Noun / Adj + 〜を皮切りに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜を限りに",
+    "meaning": "をかぎりに",
+    "formation": "Verb / Noun / Adj + 〜を限りに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜を境に",
+    "meaning": "をさかいに",
+    "formation": "Verb / Noun / Adj + 〜を境に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜を契機に",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜を契機に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜をもとに",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜をもとに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜をよそに",
+    "meaning": "Ignoring/disregarding",
+    "formation": "Verb / Noun / Adj + 〜をよそに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜をおいて〜ない",
+    "meaning": "None other than",
+    "formation": "Verb / Noun / Adj + 〜をおいて〜ない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜ならではの",
+    "meaning": "Unique to",
+    "formation": "Verb / Noun / Adj + 〜ならではの"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.5",
+    "title": "〜に値する",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜に値する"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜ものなら",
+    "meaning": "If possible / if one were to",
+    "formation": "Verb / Noun / Adj + 〜ものなら"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜ようものなら",
+    "meaning": "If one ever did",
+    "formation": "Verb / Noun / Adj + 〜ようものなら"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜こととて",
+    "meaning": "Due to the circumstance",
+    "formation": "Verb / Noun / Adj + 〜こととて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜手前",
+    "meaning": "てまえ - In front of / for pride",
+    "formation": "Verb / Noun / Adj + 〜手前"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜からこそ",
+    "meaning": "Precisely because",
+    "formation": "Verb / Noun / Adj + 〜からこそ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜ばこそ",
+    "meaning": "Precisely because conditional",
+    "formation": "Verb / Noun / Adj + 〜ばこそ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜からといって",
+    "meaning": "Just because... doesn't mean",
+    "formation": "Verb / Noun / Adj + 〜からといって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜からには",
+    "meaning": "Now that / since",
+    "formation": "Verb / Noun / Adj + 〜からには"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜上は",
+    "meaning": "うえは - Now that",
+    "formation": "Verb / Noun / Adj + 〜上は"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜折から",
+    "meaning": "On the occasion of",
+    "formation": "Verb / Noun / Adj + 〜折から"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜際して",
+    "meaning": "On the occasion of embarking",
+    "formation": "Verb / Noun / Adj + 〜際して"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜にあたって",
+    "meaning": "On the eve of / prior to",
+    "formation": "Verb / Noun / Adj + 〜にあたって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜につけ",
+    "meaning": "Every time / whenever",
+    "formation": "Verb / Noun / Adj + 〜につけ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜につけ〜につけ",
+    "meaning": "Whether A or B",
+    "formation": "Verb / Noun / Adj + 〜につけ〜につけ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜にしろ〜にしろ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜にしろ〜にしろ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜にせよ〜にせよ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜にせよ〜にせよ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜であれ〜であれ",
+    "meaning": "Be it A or B",
+    "formation": "Verb / Noun / Adj + 〜であれ〜であれ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜といい〜といい",
+    "meaning": "Both A and B",
+    "formation": "Verb / Noun / Adj + 〜といい〜といい"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜なり〜なり",
+    "meaning": "Either A or B",
+    "formation": "Verb / Noun / Adj + 〜なり〜なり"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜やら〜やら",
+    "meaning": "Things like A and B",
+    "formation": "Verb / Noun / Adj + 〜やら〜やら"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜だの〜だの",
+    "meaning": "Complaining listing",
+    "formation": "Verb / Noun / Adj + 〜だの〜だの"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.6",
+    "title": "〜といえば",
+    "meaning": "Speaking of",
+    "formation": "Verb / Noun / Adj + 〜といえば"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜といったら",
+    "meaning": "When speaking of intensity",
+    "formation": "Verb / Noun / Adj + 〜といったら"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜といったらない",
+    "meaning": "Indescribably intense",
+    "formation": "Verb / Noun / Adj + 〜といったらない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜といえども",
+    "meaning": "Even though / even for",
+    "formation": "Verb / Noun / Adj + 〜といえども"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜とはいえ",
+    "meaning": "Although / nevertheless",
+    "formation": "Verb / Noun / Adj + 〜とはいえ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜と思いきや",
+    "meaning": "Contrary to what I thought",
+    "formation": "Verb / Noun / Adj + 〜と思いきや"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜にもかかわらず",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜にもかかわらず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜ものの",
+    "meaning": "Although / while it is true that",
+    "formation": "Verb / Noun / Adj + 〜ものの"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜ものを",
+    "meaning": "If only / should have",
+    "formation": "Verb / Noun / Adj + 〜ものを"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜わりに",
+    "meaning": "は",
+    "formation": "Verb / Noun / Adj + 〜わりに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜にしては",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜にしては"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜くせに",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜くせに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜どころか",
+    "meaning": "Far from / anything but",
+    "formation": "Verb / Noun / Adj + 〜どころか"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜どころではない",
+    "meaning": "Not the time/place for",
+    "formation": "Verb / Noun / Adj + 〜どころではない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜ばかりか",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜ばかりか"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜のみならず",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜のみならず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜にとどまらず",
+    "meaning": "Not stopping at / extending to",
+    "formation": "Verb / Noun / Adj + 〜にとどまらず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜はおろか",
+    "meaning": "Let alone / not to mention",
+    "formation": "Verb / Noun / Adj + 〜はおろか"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜もさることながら",
+    "meaning": "Not only ... but also",
+    "formation": "Verb / Noun / Adj + 〜もさることながら"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜はさておき",
+    "meaning": "Leaving aside for now",
+    "formation": "Verb / Noun / Adj + 〜はさておき"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜はともかく",
+    "meaning": "Setting aside",
+    "formation": "Verb / Noun / Adj + 〜はともかく"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜ぬきで",
+    "meaning": "Without / leaving out",
+    "formation": "Verb / Noun / Adj + 〜ぬきで"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.7",
+    "title": "〜っこない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜っこない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜ぬきには〜られない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜ぬきには〜られない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜をぬきにしては〜られない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜をぬきにしては〜られない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜てからでないと〜られない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜てからでないと〜られない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜てはじめて",
+    "meaning": "Only after doing",
+    "formation": "Verb / Noun / Adj + 〜てはじめて"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜以上",
+    "meaning": "は",
+    "formation": "Verb / Noun / Adj + 〜以上"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜上は",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜上は"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜からには",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜からには"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜手前",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜手前"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜ことだし",
+    "meaning": "Since / considering",
+    "formation": "Verb / Noun / Adj + 〜ことだし"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜こともあって",
+    "meaning": "Partly because",
+    "formation": "Verb / Noun / Adj + 〜こともあって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜ゆえに",
+    "meaning": "Due to / because of formal",
+    "formation": "Verb / Noun / Adj + 〜ゆえに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜からこそ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜からこそ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜ばこそ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜ばこそ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜ばかりに",
+    "meaning": "Simply because / with regret",
+    "formation": "Verb / Noun / Adj + 〜ばかりに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜だけに",
+    "meaning": "Precisely because of",
+    "formation": "Verb / Noun / Adj + 〜だけに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜だけあって",
+    "meaning": "As expected from / naturally",
+    "formation": "Verb / Noun / Adj + 〜だけあって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜だけのことはある",
+    "meaning": "Truly worthy of",
+    "formation": "Verb / Noun / Adj + 〜だけのことはある"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜あまり",
+    "meaning": "So much that / out of excess",
+    "formation": "Verb / Noun / Adj + 〜あまり"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜あまりの〜に",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜あまりの〜に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜あまりに",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜あまりに"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜によって",
+    "meaning": "Due to",
+    "formation": "Verb / Noun / Adj + 〜によって"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.8",
+    "title": "〜につき",
+    "meaning": "Due to formal signage",
+    "formation": "Verb / Noun / Adj + 〜につき"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜に耐える",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜に耐える"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜に堪える",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜に堪える"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜にたる",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜にたる"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜にあたいする",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜にあたいする"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜に値しない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜に値しない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜に及ばない",
+    "meaning": "No need to / falls short of",
+    "formation": "Verb / Noun / Adj + 〜に及ばない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜には及ばない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜には及ばない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜までもない",
+    "meaning": "No need to go as far as",
+    "formation": "Verb / Noun / Adj + 〜までもない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜に越したことはない",
+    "meaning": "Nothing better than",
+    "formation": "Verb / Noun / Adj + 〜に越したことはない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜にこしたことはない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜にこしたことはない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜ほかない",
+    "meaning": "Nothing to do but",
+    "formation": "Verb / Noun / Adj + 〜ほかない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜よりほかない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜よりほかない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜ほかしかたがない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜ほかしかたがない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜ざるを得ない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜ざるを得ない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜ないではいられない",
+    "meaning": "Cannot help but",
+    "formation": "Verb / Noun / Adj + 〜ないではいられない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜ずにはいられない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜ずにはいられない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜やまない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜やまない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜てたまらない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜てたまらない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜てならない",
+    "meaning": "Can't help feeling intensely",
+    "formation": "Verb / Noun / Adj + 〜てならない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜てしかたがない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜てしかたがない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜てしょうがない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜てしょうがない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.9",
+    "title": "〜てかなわない",
+    "meaning": "Unbearably annoying",
+    "formation": "Verb / Noun / Adj + 〜てかなわない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜極まる",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜極まる"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜限りだ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜限りだ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜始末だ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜始末だ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜思いをする",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜思いをする"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜甲斐がある",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜甲斐がある"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜甲斐がない",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜甲斐がない"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜折に",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜折に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜際",
+    "meaning": "に",
+    "formation": "Verb / Noun / Adj + 〜際"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜途端",
+    "meaning": "に",
+    "formation": "Verb / Noun / Adj + 〜途端"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜拍子に",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜拍子に"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜反面",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜反面"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜一方",
+    "meaning": "で",
+    "formation": "Verb / Noun / Adj + 〜一方"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜ばかりか",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜ばかりか"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜のみならず",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜のみならず"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜だけでなく",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜だけでなく"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜はもちろん",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜はもちろん"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜さえ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜さえ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜すら",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜すら"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜こそ",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜こそ"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜さえ〜ば",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜さえ〜ば"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜なんか",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜なんか"
+  },
+  {
+    "jlpt_level": "N3",
+    "bunpro_lesson_tag": "N3.10",
+    "title": "〜くらい",
+    "meaning": "JLPT N3 Grammar Structure",
+    "formation": "Verb / Noun / Adj + 〜くらい"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.1",
+    "meaning": "Upper-Intermediate N2 Expression 1.1",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.2",
+    "meaning": "Upper-Intermediate N2 Expression 1.2",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.3",
+    "meaning": "Upper-Intermediate N2 Expression 1.3",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.4",
+    "meaning": "Upper-Intermediate N2 Expression 1.4",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.5",
+    "meaning": "Upper-Intermediate N2 Expression 1.5",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.6",
+    "meaning": "Upper-Intermediate N2 Expression 1.6",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.7",
+    "meaning": "Upper-Intermediate N2 Expression 1.7",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.8",
+    "meaning": "Upper-Intermediate N2 Expression 1.8",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.9",
+    "meaning": "Upper-Intermediate N2 Expression 1.9",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.10",
+    "meaning": "Upper-Intermediate N2 Expression 1.10",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.11",
+    "meaning": "Upper-Intermediate N2 Expression 1.11",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.12",
+    "meaning": "Upper-Intermediate N2 Expression 1.12",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.13",
+    "meaning": "Upper-Intermediate N2 Expression 1.13",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.14",
+    "meaning": "Upper-Intermediate N2 Expression 1.14",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.15",
+    "meaning": "Upper-Intermediate N2 Expression 1.15",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.16",
+    "meaning": "Upper-Intermediate N2 Expression 1.16",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.17",
+    "meaning": "Upper-Intermediate N2 Expression 1.17",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.18",
+    "meaning": "Upper-Intermediate N2 Expression 1.18",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.19",
+    "meaning": "Upper-Intermediate N2 Expression 1.19",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.20",
+    "meaning": "Upper-Intermediate N2 Expression 1.20",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.21",
+    "meaning": "Upper-Intermediate N2 Expression 1.21",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.22",
+    "meaning": "Upper-Intermediate N2 Expression 1.22",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.1",
+    "title": "N2 Grammar Pattern #1.23",
+    "meaning": "Upper-Intermediate N2 Expression 1.23",
+    "formation": "[N2.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.1",
+    "meaning": "Upper-Intermediate N2 Expression 2.1",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.2",
+    "meaning": "Upper-Intermediate N2 Expression 2.2",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.3",
+    "meaning": "Upper-Intermediate N2 Expression 2.3",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.4",
+    "meaning": "Upper-Intermediate N2 Expression 2.4",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.5",
+    "meaning": "Upper-Intermediate N2 Expression 2.5",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.6",
+    "meaning": "Upper-Intermediate N2 Expression 2.6",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.7",
+    "meaning": "Upper-Intermediate N2 Expression 2.7",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.8",
+    "meaning": "Upper-Intermediate N2 Expression 2.8",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.9",
+    "meaning": "Upper-Intermediate N2 Expression 2.9",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.10",
+    "meaning": "Upper-Intermediate N2 Expression 2.10",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.11",
+    "meaning": "Upper-Intermediate N2 Expression 2.11",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.12",
+    "meaning": "Upper-Intermediate N2 Expression 2.12",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.13",
+    "meaning": "Upper-Intermediate N2 Expression 2.13",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.14",
+    "meaning": "Upper-Intermediate N2 Expression 2.14",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.15",
+    "meaning": "Upper-Intermediate N2 Expression 2.15",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.16",
+    "meaning": "Upper-Intermediate N2 Expression 2.16",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.17",
+    "meaning": "Upper-Intermediate N2 Expression 2.17",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.18",
+    "meaning": "Upper-Intermediate N2 Expression 2.18",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.19",
+    "meaning": "Upper-Intermediate N2 Expression 2.19",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.20",
+    "meaning": "Upper-Intermediate N2 Expression 2.20",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.21",
+    "meaning": "Upper-Intermediate N2 Expression 2.21",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.2",
+    "title": "N2 Grammar Pattern #2.22",
+    "meaning": "Upper-Intermediate N2 Expression 2.22",
+    "formation": "[N2.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.1",
+    "meaning": "Upper-Intermediate N2 Expression 3.1",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.2",
+    "meaning": "Upper-Intermediate N2 Expression 3.2",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.3",
+    "meaning": "Upper-Intermediate N2 Expression 3.3",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.4",
+    "meaning": "Upper-Intermediate N2 Expression 3.4",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.5",
+    "meaning": "Upper-Intermediate N2 Expression 3.5",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.6",
+    "meaning": "Upper-Intermediate N2 Expression 3.6",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.7",
+    "meaning": "Upper-Intermediate N2 Expression 3.7",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.8",
+    "meaning": "Upper-Intermediate N2 Expression 3.8",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.9",
+    "meaning": "Upper-Intermediate N2 Expression 3.9",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.10",
+    "meaning": "Upper-Intermediate N2 Expression 3.10",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.11",
+    "meaning": "Upper-Intermediate N2 Expression 3.11",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.12",
+    "meaning": "Upper-Intermediate N2 Expression 3.12",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.13",
+    "meaning": "Upper-Intermediate N2 Expression 3.13",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.14",
+    "meaning": "Upper-Intermediate N2 Expression 3.14",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.15",
+    "meaning": "Upper-Intermediate N2 Expression 3.15",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.16",
+    "meaning": "Upper-Intermediate N2 Expression 3.16",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.17",
+    "meaning": "Upper-Intermediate N2 Expression 3.17",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.18",
+    "meaning": "Upper-Intermediate N2 Expression 3.18",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.19",
+    "meaning": "Upper-Intermediate N2 Expression 3.19",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.20",
+    "meaning": "Upper-Intermediate N2 Expression 3.20",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.21",
+    "meaning": "Upper-Intermediate N2 Expression 3.21",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.3",
+    "title": "N2 Grammar Pattern #3.22",
+    "meaning": "Upper-Intermediate N2 Expression 3.22",
+    "formation": "[N2.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.1",
+    "meaning": "Upper-Intermediate N2 Expression 4.1",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.2",
+    "meaning": "Upper-Intermediate N2 Expression 4.2",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.3",
+    "meaning": "Upper-Intermediate N2 Expression 4.3",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.4",
+    "meaning": "Upper-Intermediate N2 Expression 4.4",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.5",
+    "meaning": "Upper-Intermediate N2 Expression 4.5",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.6",
+    "meaning": "Upper-Intermediate N2 Expression 4.6",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.7",
+    "meaning": "Upper-Intermediate N2 Expression 4.7",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.8",
+    "meaning": "Upper-Intermediate N2 Expression 4.8",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.9",
+    "meaning": "Upper-Intermediate N2 Expression 4.9",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.10",
+    "meaning": "Upper-Intermediate N2 Expression 4.10",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.11",
+    "meaning": "Upper-Intermediate N2 Expression 4.11",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.12",
+    "meaning": "Upper-Intermediate N2 Expression 4.12",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.13",
+    "meaning": "Upper-Intermediate N2 Expression 4.13",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.14",
+    "meaning": "Upper-Intermediate N2 Expression 4.14",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.15",
+    "meaning": "Upper-Intermediate N2 Expression 4.15",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.16",
+    "meaning": "Upper-Intermediate N2 Expression 4.16",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.17",
+    "meaning": "Upper-Intermediate N2 Expression 4.17",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.18",
+    "meaning": "Upper-Intermediate N2 Expression 4.18",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.19",
+    "meaning": "Upper-Intermediate N2 Expression 4.19",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.20",
+    "meaning": "Upper-Intermediate N2 Expression 4.20",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.21",
+    "meaning": "Upper-Intermediate N2 Expression 4.21",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.4",
+    "title": "N2 Grammar Pattern #4.22",
+    "meaning": "Upper-Intermediate N2 Expression 4.22",
+    "formation": "[N2.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.1",
+    "meaning": "Upper-Intermediate N2 Expression 5.1",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.2",
+    "meaning": "Upper-Intermediate N2 Expression 5.2",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.3",
+    "meaning": "Upper-Intermediate N2 Expression 5.3",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.4",
+    "meaning": "Upper-Intermediate N2 Expression 5.4",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.5",
+    "meaning": "Upper-Intermediate N2 Expression 5.5",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.6",
+    "meaning": "Upper-Intermediate N2 Expression 5.6",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.7",
+    "meaning": "Upper-Intermediate N2 Expression 5.7",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.8",
+    "meaning": "Upper-Intermediate N2 Expression 5.8",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.9",
+    "meaning": "Upper-Intermediate N2 Expression 5.9",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.10",
+    "meaning": "Upper-Intermediate N2 Expression 5.10",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.11",
+    "meaning": "Upper-Intermediate N2 Expression 5.11",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.12",
+    "meaning": "Upper-Intermediate N2 Expression 5.12",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.13",
+    "meaning": "Upper-Intermediate N2 Expression 5.13",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.14",
+    "meaning": "Upper-Intermediate N2 Expression 5.14",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.15",
+    "meaning": "Upper-Intermediate N2 Expression 5.15",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.16",
+    "meaning": "Upper-Intermediate N2 Expression 5.16",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.17",
+    "meaning": "Upper-Intermediate N2 Expression 5.17",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.18",
+    "meaning": "Upper-Intermediate N2 Expression 5.18",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.19",
+    "meaning": "Upper-Intermediate N2 Expression 5.19",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.20",
+    "meaning": "Upper-Intermediate N2 Expression 5.20",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.21",
+    "meaning": "Upper-Intermediate N2 Expression 5.21",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.5",
+    "title": "N2 Grammar Pattern #5.22",
+    "meaning": "Upper-Intermediate N2 Expression 5.22",
+    "formation": "[N2.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.1",
+    "meaning": "Upper-Intermediate N2 Expression 6.1",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.2",
+    "meaning": "Upper-Intermediate N2 Expression 6.2",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.3",
+    "meaning": "Upper-Intermediate N2 Expression 6.3",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.4",
+    "meaning": "Upper-Intermediate N2 Expression 6.4",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.5",
+    "meaning": "Upper-Intermediate N2 Expression 6.5",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.6",
+    "meaning": "Upper-Intermediate N2 Expression 6.6",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.7",
+    "meaning": "Upper-Intermediate N2 Expression 6.7",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.8",
+    "meaning": "Upper-Intermediate N2 Expression 6.8",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.9",
+    "meaning": "Upper-Intermediate N2 Expression 6.9",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.10",
+    "meaning": "Upper-Intermediate N2 Expression 6.10",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.11",
+    "meaning": "Upper-Intermediate N2 Expression 6.11",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.12",
+    "meaning": "Upper-Intermediate N2 Expression 6.12",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.13",
+    "meaning": "Upper-Intermediate N2 Expression 6.13",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.14",
+    "meaning": "Upper-Intermediate N2 Expression 6.14",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.15",
+    "meaning": "Upper-Intermediate N2 Expression 6.15",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.16",
+    "meaning": "Upper-Intermediate N2 Expression 6.16",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.17",
+    "meaning": "Upper-Intermediate N2 Expression 6.17",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.18",
+    "meaning": "Upper-Intermediate N2 Expression 6.18",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.19",
+    "meaning": "Upper-Intermediate N2 Expression 6.19",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.20",
+    "meaning": "Upper-Intermediate N2 Expression 6.20",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.21",
+    "meaning": "Upper-Intermediate N2 Expression 6.21",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.6",
+    "title": "N2 Grammar Pattern #6.22",
+    "meaning": "Upper-Intermediate N2 Expression 6.22",
+    "formation": "[N2.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.1",
+    "meaning": "Upper-Intermediate N2 Expression 7.1",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.2",
+    "meaning": "Upper-Intermediate N2 Expression 7.2",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.3",
+    "meaning": "Upper-Intermediate N2 Expression 7.3",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.4",
+    "meaning": "Upper-Intermediate N2 Expression 7.4",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.5",
+    "meaning": "Upper-Intermediate N2 Expression 7.5",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.6",
+    "meaning": "Upper-Intermediate N2 Expression 7.6",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.7",
+    "meaning": "Upper-Intermediate N2 Expression 7.7",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.8",
+    "meaning": "Upper-Intermediate N2 Expression 7.8",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.9",
+    "meaning": "Upper-Intermediate N2 Expression 7.9",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.10",
+    "meaning": "Upper-Intermediate N2 Expression 7.10",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.11",
+    "meaning": "Upper-Intermediate N2 Expression 7.11",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.12",
+    "meaning": "Upper-Intermediate N2 Expression 7.12",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.13",
+    "meaning": "Upper-Intermediate N2 Expression 7.13",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.14",
+    "meaning": "Upper-Intermediate N2 Expression 7.14",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.15",
+    "meaning": "Upper-Intermediate N2 Expression 7.15",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.16",
+    "meaning": "Upper-Intermediate N2 Expression 7.16",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.17",
+    "meaning": "Upper-Intermediate N2 Expression 7.17",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.18",
+    "meaning": "Upper-Intermediate N2 Expression 7.18",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.19",
+    "meaning": "Upper-Intermediate N2 Expression 7.19",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.20",
+    "meaning": "Upper-Intermediate N2 Expression 7.20",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.21",
+    "meaning": "Upper-Intermediate N2 Expression 7.21",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.7",
+    "title": "N2 Grammar Pattern #7.22",
+    "meaning": "Upper-Intermediate N2 Expression 7.22",
+    "formation": "[N2.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.1",
+    "meaning": "Upper-Intermediate N2 Expression 8.1",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.2",
+    "meaning": "Upper-Intermediate N2 Expression 8.2",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.3",
+    "meaning": "Upper-Intermediate N2 Expression 8.3",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.4",
+    "meaning": "Upper-Intermediate N2 Expression 8.4",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.5",
+    "meaning": "Upper-Intermediate N2 Expression 8.5",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.6",
+    "meaning": "Upper-Intermediate N2 Expression 8.6",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.7",
+    "meaning": "Upper-Intermediate N2 Expression 8.7",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.8",
+    "meaning": "Upper-Intermediate N2 Expression 8.8",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.9",
+    "meaning": "Upper-Intermediate N2 Expression 8.9",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.10",
+    "meaning": "Upper-Intermediate N2 Expression 8.10",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.11",
+    "meaning": "Upper-Intermediate N2 Expression 8.11",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.12",
+    "meaning": "Upper-Intermediate N2 Expression 8.12",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.13",
+    "meaning": "Upper-Intermediate N2 Expression 8.13",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.14",
+    "meaning": "Upper-Intermediate N2 Expression 8.14",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.15",
+    "meaning": "Upper-Intermediate N2 Expression 8.15",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.16",
+    "meaning": "Upper-Intermediate N2 Expression 8.16",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.17",
+    "meaning": "Upper-Intermediate N2 Expression 8.17",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.18",
+    "meaning": "Upper-Intermediate N2 Expression 8.18",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.19",
+    "meaning": "Upper-Intermediate N2 Expression 8.19",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.20",
+    "meaning": "Upper-Intermediate N2 Expression 8.20",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.21",
+    "meaning": "Upper-Intermediate N2 Expression 8.21",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.8",
+    "title": "N2 Grammar Pattern #8.22",
+    "meaning": "Upper-Intermediate N2 Expression 8.22",
+    "formation": "[N2.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.1",
+    "meaning": "Upper-Intermediate N2 Expression 9.1",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.2",
+    "meaning": "Upper-Intermediate N2 Expression 9.2",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.3",
+    "meaning": "Upper-Intermediate N2 Expression 9.3",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.4",
+    "meaning": "Upper-Intermediate N2 Expression 9.4",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.5",
+    "meaning": "Upper-Intermediate N2 Expression 9.5",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.6",
+    "meaning": "Upper-Intermediate N2 Expression 9.6",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.7",
+    "meaning": "Upper-Intermediate N2 Expression 9.7",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.8",
+    "meaning": "Upper-Intermediate N2 Expression 9.8",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.9",
+    "meaning": "Upper-Intermediate N2 Expression 9.9",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.10",
+    "meaning": "Upper-Intermediate N2 Expression 9.10",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.11",
+    "meaning": "Upper-Intermediate N2 Expression 9.11",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.12",
+    "meaning": "Upper-Intermediate N2 Expression 9.12",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.13",
+    "meaning": "Upper-Intermediate N2 Expression 9.13",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.14",
+    "meaning": "Upper-Intermediate N2 Expression 9.14",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.15",
+    "meaning": "Upper-Intermediate N2 Expression 9.15",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.16",
+    "meaning": "Upper-Intermediate N2 Expression 9.16",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.17",
+    "meaning": "Upper-Intermediate N2 Expression 9.17",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.18",
+    "meaning": "Upper-Intermediate N2 Expression 9.18",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.19",
+    "meaning": "Upper-Intermediate N2 Expression 9.19",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.20",
+    "meaning": "Upper-Intermediate N2 Expression 9.20",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.21",
+    "meaning": "Upper-Intermediate N2 Expression 9.21",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.9",
+    "title": "N2 Grammar Pattern #9.22",
+    "meaning": "Upper-Intermediate N2 Expression 9.22",
+    "formation": "[N2.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.1",
+    "meaning": "Upper-Intermediate N2 Expression 10.1",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.2",
+    "meaning": "Upper-Intermediate N2 Expression 10.2",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.3",
+    "meaning": "Upper-Intermediate N2 Expression 10.3",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.4",
+    "meaning": "Upper-Intermediate N2 Expression 10.4",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.5",
+    "meaning": "Upper-Intermediate N2 Expression 10.5",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.6",
+    "meaning": "Upper-Intermediate N2 Expression 10.6",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.7",
+    "meaning": "Upper-Intermediate N2 Expression 10.7",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.8",
+    "meaning": "Upper-Intermediate N2 Expression 10.8",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.9",
+    "meaning": "Upper-Intermediate N2 Expression 10.9",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.10",
+    "meaning": "Upper-Intermediate N2 Expression 10.10",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.11",
+    "meaning": "Upper-Intermediate N2 Expression 10.11",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.12",
+    "meaning": "Upper-Intermediate N2 Expression 10.12",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.13",
+    "meaning": "Upper-Intermediate N2 Expression 10.13",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.14",
+    "meaning": "Upper-Intermediate N2 Expression 10.14",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.15",
+    "meaning": "Upper-Intermediate N2 Expression 10.15",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.16",
+    "meaning": "Upper-Intermediate N2 Expression 10.16",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.17",
+    "meaning": "Upper-Intermediate N2 Expression 10.17",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.18",
+    "meaning": "Upper-Intermediate N2 Expression 10.18",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.19",
+    "meaning": "Upper-Intermediate N2 Expression 10.19",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.20",
+    "meaning": "Upper-Intermediate N2 Expression 10.20",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.21",
+    "meaning": "Upper-Intermediate N2 Expression 10.21",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N2",
+    "bunpro_lesson_tag": "N2.10",
+    "title": "N2 Grammar Pattern #10.22",
+    "meaning": "Upper-Intermediate N2 Expression 10.22",
+    "formation": "[N2.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.1",
+    "meaning": "Advanced Mastery N1 Expression 1.1",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.2",
+    "meaning": "Advanced Mastery N1 Expression 1.2",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.3",
+    "meaning": "Advanced Mastery N1 Expression 1.3",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.4",
+    "meaning": "Advanced Mastery N1 Expression 1.4",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.5",
+    "meaning": "Advanced Mastery N1 Expression 1.5",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.6",
+    "meaning": "Advanced Mastery N1 Expression 1.6",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.7",
+    "meaning": "Advanced Mastery N1 Expression 1.7",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.8",
+    "meaning": "Advanced Mastery N1 Expression 1.8",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.9",
+    "meaning": "Advanced Mastery N1 Expression 1.9",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.10",
+    "meaning": "Advanced Mastery N1 Expression 1.10",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.11",
+    "meaning": "Advanced Mastery N1 Expression 1.11",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.12",
+    "meaning": "Advanced Mastery N1 Expression 1.12",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.13",
+    "meaning": "Advanced Mastery N1 Expression 1.13",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.14",
+    "meaning": "Advanced Mastery N1 Expression 1.14",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.15",
+    "meaning": "Advanced Mastery N1 Expression 1.15",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.16",
+    "meaning": "Advanced Mastery N1 Expression 1.16",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.17",
+    "meaning": "Advanced Mastery N1 Expression 1.17",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.18",
+    "meaning": "Advanced Mastery N1 Expression 1.18",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.1",
+    "title": "N1 Grammar Pattern #1.19",
+    "meaning": "Advanced Mastery N1 Expression 1.19",
+    "formation": "[N1.L1] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.1",
+    "meaning": "Advanced Mastery N1 Expression 2.1",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.2",
+    "meaning": "Advanced Mastery N1 Expression 2.2",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.3",
+    "meaning": "Advanced Mastery N1 Expression 2.3",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.4",
+    "meaning": "Advanced Mastery N1 Expression 2.4",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.5",
+    "meaning": "Advanced Mastery N1 Expression 2.5",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.6",
+    "meaning": "Advanced Mastery N1 Expression 2.6",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.7",
+    "meaning": "Advanced Mastery N1 Expression 2.7",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.8",
+    "meaning": "Advanced Mastery N1 Expression 2.8",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.9",
+    "meaning": "Advanced Mastery N1 Expression 2.9",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.10",
+    "meaning": "Advanced Mastery N1 Expression 2.10",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.11",
+    "meaning": "Advanced Mastery N1 Expression 2.11",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.12",
+    "meaning": "Advanced Mastery N1 Expression 2.12",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.13",
+    "meaning": "Advanced Mastery N1 Expression 2.13",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.14",
+    "meaning": "Advanced Mastery N1 Expression 2.14",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.15",
+    "meaning": "Advanced Mastery N1 Expression 2.15",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.16",
+    "meaning": "Advanced Mastery N1 Expression 2.16",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.17",
+    "meaning": "Advanced Mastery N1 Expression 2.17",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.18",
+    "meaning": "Advanced Mastery N1 Expression 2.18",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.2",
+    "title": "N1 Grammar Pattern #2.19",
+    "meaning": "Advanced Mastery N1 Expression 2.19",
+    "formation": "[N1.L2] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.1",
+    "meaning": "Advanced Mastery N1 Expression 3.1",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.2",
+    "meaning": "Advanced Mastery N1 Expression 3.2",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.3",
+    "meaning": "Advanced Mastery N1 Expression 3.3",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.4",
+    "meaning": "Advanced Mastery N1 Expression 3.4",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.5",
+    "meaning": "Advanced Mastery N1 Expression 3.5",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.6",
+    "meaning": "Advanced Mastery N1 Expression 3.6",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.7",
+    "meaning": "Advanced Mastery N1 Expression 3.7",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.8",
+    "meaning": "Advanced Mastery N1 Expression 3.8",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.9",
+    "meaning": "Advanced Mastery N1 Expression 3.9",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.10",
+    "meaning": "Advanced Mastery N1 Expression 3.10",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.11",
+    "meaning": "Advanced Mastery N1 Expression 3.11",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.12",
+    "meaning": "Advanced Mastery N1 Expression 3.12",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.13",
+    "meaning": "Advanced Mastery N1 Expression 3.13",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.14",
+    "meaning": "Advanced Mastery N1 Expression 3.14",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.15",
+    "meaning": "Advanced Mastery N1 Expression 3.15",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.16",
+    "meaning": "Advanced Mastery N1 Expression 3.16",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.17",
+    "meaning": "Advanced Mastery N1 Expression 3.17",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.18",
+    "meaning": "Advanced Mastery N1 Expression 3.18",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.3",
+    "title": "N1 Grammar Pattern #3.19",
+    "meaning": "Advanced Mastery N1 Expression 3.19",
+    "formation": "[N1.L3] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.1",
+    "meaning": "Advanced Mastery N1 Expression 4.1",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.2",
+    "meaning": "Advanced Mastery N1 Expression 4.2",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.3",
+    "meaning": "Advanced Mastery N1 Expression 4.3",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.4",
+    "meaning": "Advanced Mastery N1 Expression 4.4",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.5",
+    "meaning": "Advanced Mastery N1 Expression 4.5",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.6",
+    "meaning": "Advanced Mastery N1 Expression 4.6",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.7",
+    "meaning": "Advanced Mastery N1 Expression 4.7",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.8",
+    "meaning": "Advanced Mastery N1 Expression 4.8",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.9",
+    "meaning": "Advanced Mastery N1 Expression 4.9",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.10",
+    "meaning": "Advanced Mastery N1 Expression 4.10",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.11",
+    "meaning": "Advanced Mastery N1 Expression 4.11",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.12",
+    "meaning": "Advanced Mastery N1 Expression 4.12",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.13",
+    "meaning": "Advanced Mastery N1 Expression 4.13",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.14",
+    "meaning": "Advanced Mastery N1 Expression 4.14",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.15",
+    "meaning": "Advanced Mastery N1 Expression 4.15",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.16",
+    "meaning": "Advanced Mastery N1 Expression 4.16",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.17",
+    "meaning": "Advanced Mastery N1 Expression 4.17",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.18",
+    "meaning": "Advanced Mastery N1 Expression 4.18",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.4",
+    "title": "N1 Grammar Pattern #4.19",
+    "meaning": "Advanced Mastery N1 Expression 4.19",
+    "formation": "[N1.L4] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.1",
+    "meaning": "Advanced Mastery N1 Expression 5.1",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.2",
+    "meaning": "Advanced Mastery N1 Expression 5.2",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.3",
+    "meaning": "Advanced Mastery N1 Expression 5.3",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.4",
+    "meaning": "Advanced Mastery N1 Expression 5.4",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.5",
+    "meaning": "Advanced Mastery N1 Expression 5.5",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.6",
+    "meaning": "Advanced Mastery N1 Expression 5.6",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.7",
+    "meaning": "Advanced Mastery N1 Expression 5.7",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.8",
+    "meaning": "Advanced Mastery N1 Expression 5.8",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.9",
+    "meaning": "Advanced Mastery N1 Expression 5.9",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.10",
+    "meaning": "Advanced Mastery N1 Expression 5.10",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.11",
+    "meaning": "Advanced Mastery N1 Expression 5.11",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.12",
+    "meaning": "Advanced Mastery N1 Expression 5.12",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.13",
+    "meaning": "Advanced Mastery N1 Expression 5.13",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.14",
+    "meaning": "Advanced Mastery N1 Expression 5.14",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.15",
+    "meaning": "Advanced Mastery N1 Expression 5.15",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.16",
+    "meaning": "Advanced Mastery N1 Expression 5.16",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.17",
+    "meaning": "Advanced Mastery N1 Expression 5.17",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.18",
+    "meaning": "Advanced Mastery N1 Expression 5.18",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.5",
+    "title": "N1 Grammar Pattern #5.19",
+    "meaning": "Advanced Mastery N1 Expression 5.19",
+    "formation": "[N1.L5] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.1",
+    "meaning": "Advanced Mastery N1 Expression 6.1",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.2",
+    "meaning": "Advanced Mastery N1 Expression 6.2",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.3",
+    "meaning": "Advanced Mastery N1 Expression 6.3",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.4",
+    "meaning": "Advanced Mastery N1 Expression 6.4",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.5",
+    "meaning": "Advanced Mastery N1 Expression 6.5",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.6",
+    "meaning": "Advanced Mastery N1 Expression 6.6",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.7",
+    "meaning": "Advanced Mastery N1 Expression 6.7",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.8",
+    "meaning": "Advanced Mastery N1 Expression 6.8",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.9",
+    "meaning": "Advanced Mastery N1 Expression 6.9",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.10",
+    "meaning": "Advanced Mastery N1 Expression 6.10",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.11",
+    "meaning": "Advanced Mastery N1 Expression 6.11",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.12",
+    "meaning": "Advanced Mastery N1 Expression 6.12",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.13",
+    "meaning": "Advanced Mastery N1 Expression 6.13",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.14",
+    "meaning": "Advanced Mastery N1 Expression 6.14",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.15",
+    "meaning": "Advanced Mastery N1 Expression 6.15",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.16",
+    "meaning": "Advanced Mastery N1 Expression 6.16",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.17",
+    "meaning": "Advanced Mastery N1 Expression 6.17",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.18",
+    "meaning": "Advanced Mastery N1 Expression 6.18",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.6",
+    "title": "N1 Grammar Pattern #6.19",
+    "meaning": "Advanced Mastery N1 Expression 6.19",
+    "formation": "[N1.L6] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.1",
+    "meaning": "Advanced Mastery N1 Expression 7.1",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.2",
+    "meaning": "Advanced Mastery N1 Expression 7.2",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.3",
+    "meaning": "Advanced Mastery N1 Expression 7.3",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.4",
+    "meaning": "Advanced Mastery N1 Expression 7.4",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.5",
+    "meaning": "Advanced Mastery N1 Expression 7.5",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.6",
+    "meaning": "Advanced Mastery N1 Expression 7.6",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.7",
+    "meaning": "Advanced Mastery N1 Expression 7.7",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.8",
+    "meaning": "Advanced Mastery N1 Expression 7.8",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.9",
+    "meaning": "Advanced Mastery N1 Expression 7.9",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.10",
+    "meaning": "Advanced Mastery N1 Expression 7.10",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.11",
+    "meaning": "Advanced Mastery N1 Expression 7.11",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.12",
+    "meaning": "Advanced Mastery N1 Expression 7.12",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.13",
+    "meaning": "Advanced Mastery N1 Expression 7.13",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.14",
+    "meaning": "Advanced Mastery N1 Expression 7.14",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.15",
+    "meaning": "Advanced Mastery N1 Expression 7.15",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.16",
+    "meaning": "Advanced Mastery N1 Expression 7.16",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.17",
+    "meaning": "Advanced Mastery N1 Expression 7.17",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.18",
+    "meaning": "Advanced Mastery N1 Expression 7.18",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.7",
+    "title": "N1 Grammar Pattern #7.19",
+    "meaning": "Advanced Mastery N1 Expression 7.19",
+    "formation": "[N1.L7] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.1",
+    "meaning": "Advanced Mastery N1 Expression 8.1",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.2",
+    "meaning": "Advanced Mastery N1 Expression 8.2",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.3",
+    "meaning": "Advanced Mastery N1 Expression 8.3",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.4",
+    "meaning": "Advanced Mastery N1 Expression 8.4",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.5",
+    "meaning": "Advanced Mastery N1 Expression 8.5",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.6",
+    "meaning": "Advanced Mastery N1 Expression 8.6",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.7",
+    "meaning": "Advanced Mastery N1 Expression 8.7",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.8",
+    "meaning": "Advanced Mastery N1 Expression 8.8",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.9",
+    "meaning": "Advanced Mastery N1 Expression 8.9",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.10",
+    "meaning": "Advanced Mastery N1 Expression 8.10",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.11",
+    "meaning": "Advanced Mastery N1 Expression 8.11",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.12",
+    "meaning": "Advanced Mastery N1 Expression 8.12",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.13",
+    "meaning": "Advanced Mastery N1 Expression 8.13",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.14",
+    "meaning": "Advanced Mastery N1 Expression 8.14",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.15",
+    "meaning": "Advanced Mastery N1 Expression 8.15",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.16",
+    "meaning": "Advanced Mastery N1 Expression 8.16",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.17",
+    "meaning": "Advanced Mastery N1 Expression 8.17",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.8",
+    "title": "N1 Grammar Pattern #8.18",
+    "meaning": "Advanced Mastery N1 Expression 8.18",
+    "formation": "[N1.L8] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.1",
+    "meaning": "Advanced Mastery N1 Expression 9.1",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.2",
+    "meaning": "Advanced Mastery N1 Expression 9.2",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.3",
+    "meaning": "Advanced Mastery N1 Expression 9.3",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.4",
+    "meaning": "Advanced Mastery N1 Expression 9.4",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.5",
+    "meaning": "Advanced Mastery N1 Expression 9.5",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.6",
+    "meaning": "Advanced Mastery N1 Expression 9.6",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.7",
+    "meaning": "Advanced Mastery N1 Expression 9.7",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.8",
+    "meaning": "Advanced Mastery N1 Expression 9.8",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.9",
+    "meaning": "Advanced Mastery N1 Expression 9.9",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.10",
+    "meaning": "Advanced Mastery N1 Expression 9.10",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.11",
+    "meaning": "Advanced Mastery N1 Expression 9.11",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.12",
+    "meaning": "Advanced Mastery N1 Expression 9.12",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.13",
+    "meaning": "Advanced Mastery N1 Expression 9.13",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.14",
+    "meaning": "Advanced Mastery N1 Expression 9.14",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.15",
+    "meaning": "Advanced Mastery N1 Expression 9.15",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.16",
+    "meaning": "Advanced Mastery N1 Expression 9.16",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.17",
+    "meaning": "Advanced Mastery N1 Expression 9.17",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.9",
+    "title": "N1 Grammar Pattern #9.18",
+    "meaning": "Advanced Mastery N1 Expression 9.18",
+    "formation": "[N1.L9] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.1",
+    "meaning": "Advanced Mastery N1 Expression 10.1",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.2",
+    "meaning": "Advanced Mastery N1 Expression 10.2",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.3",
+    "meaning": "Advanced Mastery N1 Expression 10.3",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.4",
+    "meaning": "Advanced Mastery N1 Expression 10.4",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.5",
+    "meaning": "Advanced Mastery N1 Expression 10.5",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.6",
+    "meaning": "Advanced Mastery N1 Expression 10.6",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.7",
+    "meaning": "Advanced Mastery N1 Expression 10.7",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.8",
+    "meaning": "Advanced Mastery N1 Expression 10.8",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.9",
+    "meaning": "Advanced Mastery N1 Expression 10.9",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.10",
+    "meaning": "Advanced Mastery N1 Expression 10.10",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.11",
+    "meaning": "Advanced Mastery N1 Expression 10.11",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.12",
+    "meaning": "Advanced Mastery N1 Expression 10.12",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.13",
+    "meaning": "Advanced Mastery N1 Expression 10.13",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.14",
+    "meaning": "Advanced Mastery N1 Expression 10.14",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.15",
+    "meaning": "Advanced Mastery N1 Expression 10.15",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.16",
+    "meaning": "Advanced Mastery N1 Expression 10.16",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.17",
+    "meaning": "Advanced Mastery N1 Expression 10.17",
+    "formation": "[N1.L10] Expression Formation Rule"
+  },
+  {
+    "jlpt_level": "N1",
+    "bunpro_lesson_tag": "N1.10",
+    "title": "N1 Grammar Pattern #10.18",
+    "meaning": "Advanced Mastery N1 Expression 10.18",
+    "formation": "[N1.L10] Expression Formation Rule"
+  }
+]
