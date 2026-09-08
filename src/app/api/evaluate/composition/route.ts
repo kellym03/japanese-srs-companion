@@ -71,50 +71,83 @@ Required / Suggested Vocabulary: ${vocabListText}
 Student's Japanese Submission: "${userSubmission.trim()}"
 `;
 
-    const { object: evaluation } = await generateObject({
-      model: compositionModel,
-      schema: CompositionEvaluationSchema,
-      system: systemPrompt,
-      prompt: userPrompt,
-    });
-
-    // 4. Save Session to Supabase practice_sessions
-    let sessionId: string | undefined;
     try {
-      const { data: savedSession, error: dbError } = await supabase
-        .from("practice_sessions")
-        .insert({
-          user_id: userId,
-          mode: "composition",
-          prompt_data: {
-            scenario: promptScenario,
-            targetGrammar: grammarInfo,
-            targetVocab: targetVocab || [],
-          },
-          user_submission: userSubmission.trim(),
-          evaluation,
-        })
-        .select("id")
-        .single();
+      const { object: evaluation } = await generateObject({
+        model: compositionModel,
+        schema: CompositionEvaluationSchema,
+        system: systemPrompt,
+        prompt: userPrompt,
+      });
 
-      if (!dbError && savedSession) {
-        sessionId = savedSession.id;
+      // 4. Save Session to Supabase practice_sessions
+      let sessionId: string | undefined;
+      try {
+        const { data: savedSession, error: dbError } = await supabase
+          .from("practice_sessions")
+          .insert({
+            user_id: userId,
+            mode: "composition",
+            prompt_data: {
+              scenario: promptScenario,
+              targetGrammar: grammarInfo,
+              targetVocab: targetVocab || [],
+            },
+            user_submission: userSubmission.trim(),
+            evaluation,
+          })
+          .select("id")
+          .single();
+
+        if (!dbError && savedSession) {
+          sessionId = savedSession.id;
+        }
+      } catch {
+        // Non-fatal if session saving fails
       }
-    } catch {
-      // Non-fatal if session saving fails
-    }
 
-    return NextResponse.json({
-      success: true,
-      evaluation,
-      sessionId,
-    });
+      return NextResponse.json({
+        success: true,
+        evaluation,
+        sessionId,
+      });
+    } catch (aiErr: unknown) {
+      const isRateLimit =
+        (aiErr as any)?.status === 429 ||
+        /429|quota|rate limit|ResourceExhausted/i.test(
+          aiErr instanceof Error ? aiErr.message : ""
+        );
+
+      if (isRateLimit) {
+        return NextResponse.json(
+          {
+            success: false,
+            rateLimited: true,
+            retryAfterSeconds: 30,
+            error:
+              "Gemini API rate limit reached (Free Tier). Please wait a few moments before evaluating.",
+          },
+          { status: 429 }
+        );
+      }
+      throw aiErr;
+    }
   } catch (error: unknown) {
     const message =
       error instanceof Error ? error.message : "Failed to evaluate composition";
+    const isRateLimit =
+      (error as any)?.status === 429 ||
+      /429|quota|rate limit|ResourceExhausted/i.test(message);
+
     return NextResponse.json(
-      { success: false, error: message },
-      { status: 500 }
+      {
+        success: false,
+        rateLimited: isRateLimit,
+        retryAfterSeconds: isRateLimit ? 30 : undefined,
+        error: isRateLimit
+          ? "Gemini API rate limit reached (Free Tier). Please wait a moment before submitting evaluation."
+          : message,
+      },
+      { status: isRateLimit ? 429 : 500 }
     );
   }
 }

@@ -28,7 +28,6 @@ export async function GET(req: NextRequest) {
     const activeLessonTag = `${targetLevel}.${activeLessonNum}`;
 
     // 2. Fetch grammar points at or near active frontier
-    // Prioritize active lesson tag, fallback to any unlocked lesson in current level
     let { data: grammarCandidates } = await supabase
       .from("grammar_points")
       .select("id, jlpt_level, title, meaning, formation, bunpro_lesson_tag")
@@ -36,7 +35,6 @@ export async function GET(req: NextRequest) {
       .eq("bunpro_lesson_tag", activeLessonTag);
 
     if (!grammarCandidates || grammarCandidates.length === 0) {
-      // Fallback to all grammar points for target level
       const { data: fallbackCandidates } = await supabase
         .from("grammar_points")
         .select("id, jlpt_level, title, meaning, formation, bunpro_lesson_tag")
@@ -45,7 +43,6 @@ export async function GET(req: NextRequest) {
     }
 
     if (grammarCandidates.length === 0) {
-      // General fallback to any grammar point
       const { data: anyGrammar } = await supabase
         .from("grammar_points")
         .select("id, jlpt_level, title, meaning, formation, bunpro_lesson_tag")
@@ -60,7 +57,6 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    // Pick 1 random grammar point from candidates
     const targetGrammar =
       grammarCandidates[Math.floor(Math.random() * grammarCandidates.length)];
 
@@ -81,11 +77,9 @@ export async function GET(req: NextRequest) {
     }> = [];
 
     if (vocabPool && vocabPool.length > 0) {
-      // Shuffle and pick 2-3 items
       const shuffled = [...vocabPool].sort(() => 0.5 - Math.random());
       targetVocab = shuffled.slice(0, Math.min(3, shuffled.length));
     } else {
-      // Fallback default vocab if known_vocab is empty
       targetVocab = [
         {
           id: "default-1",
@@ -151,8 +145,27 @@ Create a prompt in English (1-2 sentences) instructing the user to express a sit
           lessonTag: activeLessonTag,
         },
       });
-    } catch {
-      // Fallback static scenario if Gemini prompt generation times out
+    } catch (aiErr: unknown) {
+      const isRateLimit =
+        (aiErr as any)?.status === 429 ||
+        /429|quota|rate limit|ResourceExhausted/i.test(
+          aiErr instanceof Error ? aiErr.message : ""
+        );
+
+      if (isRateLimit) {
+        return NextResponse.json(
+          {
+            success: false,
+            rateLimited: true,
+            retryAfterSeconds: 30,
+            error:
+              "Gemini API rate limit reached (Free Tier). Please wait a few moments before generating a new prompt.",
+          },
+          { status: 429 }
+        );
+      }
+
+      // Fallback static scenario if generation times out
       const vocabWord1 = targetVocab[0]?.characters || "言葉";
       const vocabWord2 = targetVocab[1]?.characters || "会話";
       const fallbackScenario = `Express a situation where you explain or remark on something using ${targetGrammar.title} (${targetGrammar.meaning}), incorporating "${vocabWord1}" and "${vocabWord2}".`;
@@ -173,9 +186,20 @@ Create a prompt in English (1-2 sentences) instructing the user to express a sit
   } catch (error: unknown) {
     const message =
       error instanceof Error ? error.message : "Failed to generate composition prompt";
+    const isRateLimit =
+      (error as any)?.status === 429 ||
+      /429|quota|rate limit|ResourceExhausted/i.test(message);
+
     return NextResponse.json(
-      { success: false, error: message },
-      { status: 500 }
+      {
+        success: false,
+        rateLimited: isRateLimit,
+        retryAfterSeconds: isRateLimit ? 30 : undefined,
+        error: isRateLimit
+          ? "Gemini API rate limit reached (Free Tier). Please wait a few seconds before retrying."
+          : message,
+      },
+      { status: isRateLimit ? 429 : 500 }
     );
   }
 }

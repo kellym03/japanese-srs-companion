@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   BookOpen,
   Sparkles,
@@ -23,6 +23,8 @@ import {
   ChevronUp,
   Trash2,
   AlertTriangle,
+  Clock,
+  Cloud,
 } from "lucide-react";
 import { ReadingPassage } from "@/lib/ai/gemini";
 import { usePersistentState } from "@/lib/hooks/usePersistentState";
@@ -67,6 +69,7 @@ export interface StoredReadingState {
   activeThemeId: string;
   passagesByTheme: Record<string, ThemeState>;
   fontSize: "sm" | "md" | "lg";
+  updatedAt?: string;
 }
 
 interface ReadingPracticeProps {
@@ -113,12 +116,27 @@ export default function ReadingPractice({
   const [showGlossary, setShowGlossary] = useState<boolean>(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [showResetConfirm, setShowResetConfirm] = useState<boolean>(false);
+  const [rateLimitCountdown, setRateLimitCountdown] = useState<number | null>(null);
+  const [isSyncingRemote, setIsSyncingRemote] = useState<boolean>(false);
 
   const [recentSessions, setRecentSessions] = useState<ReadingPracticeSession[]>([]);
   const [loadingHistory, setLoadingHistory] = useState<boolean>(false);
   const [showHistory, setShowHistory] = useState<boolean>(false);
 
+  const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const currentFrontierKey = `${activeLevel}-${activeFrontier}`;
+
+  // Rate limit countdown timer tick
+  useEffect(() => {
+    if (rateLimitCountdown === null || rateLimitCountdown <= 0) return;
+    const interval = setInterval(() => {
+      setRateLimitCountdown((prev) => {
+        if (prev === null || prev <= 1) return null;
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [rateLimitCountdown]);
 
   // Find active preset and state
   const activeThemeId = storedData.activeThemeId || TOPIC_PRESETS[0].id;
@@ -145,8 +163,77 @@ export default function ReadingPractice({
     }
   };
 
-  // 2. Generate a new reading passage scoped strictly to the specified or active theme
+  // 2. Fetch remote active state from Supabase on mount
+  useEffect(() => {
+    if (!isHydrated) return;
+    loadHistory();
+
+    const fetchRemoteActiveState = async () => {
+      try {
+        setIsSyncingRemote(true);
+        const res = await fetch(
+          `/api/practice/active-state?userId=${encodeURIComponent(userId)}&mode=reading`
+        );
+        const data = await res.json();
+        if (data.success && data.state && data.state.passagesByTheme) {
+          setStoredData((local) => {
+            const remotePassages = data.state.passagesByTheme || {};
+            const localPassages = local.passagesByTheme || {};
+            return {
+              ...local,
+              activeThemeId: local.activeThemeId || data.state.activeThemeId || TOPIC_PRESETS[0].id,
+              passagesByTheme: {
+                ...remotePassages,
+                ...localPassages,
+              },
+            };
+          });
+        }
+      } catch {
+        // Fall back to local
+      } finally {
+        setIsSyncingRemote(false);
+      }
+    };
+
+    fetchRemoteActiveState();
+  }, [isHydrated, userId]);
+
+  // 3. Debounced sync to Supabase active state
+  useEffect(() => {
+    if (!isHydrated) return;
+
+    const hasAnyPassage = Object.values(storedData.passagesByTheme || {}).some(
+      (t) => t?.passageData !== null && t?.passageData !== undefined
+    );
+    if (!hasAnyPassage) return;
+
+    if (saveTimeoutRef.current) clearTimeout(saveTimeoutRef.current);
+    saveTimeoutRef.current = setTimeout(async () => {
+      try {
+        await fetch("/api/practice/active-state", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId,
+            mode: "reading",
+            state: storedData,
+          }),
+        });
+      } catch {
+        // Non-fatal
+      }
+    }, 800);
+
+    return () => {
+      if (saveTimeoutRef.current) clearTimeout(saveTimeoutRef.current);
+    };
+  }, [storedData, isHydrated, userId]);
+
+  // 4. Generate a new reading passage (Explicit user action ONLY)
   const generatePassage = async (targetThemeId?: string) => {
+    if (rateLimitCountdown !== null && rateLimitCountdown > 0) return;
+
     const themeToGenerate = targetThemeId || activeThemeId;
     const preset =
       TOPIC_PRESETS.find((p) => p.id === themeToGenerate) || TOPIC_PRESETS[0];
@@ -166,8 +253,9 @@ export default function ReadingPractice({
 
       const data = await res.json();
       if (!res.ok || !data.success) {
-        if (res.status === 429) {
-          throw new Error("Gemini rate limit reached. Please wait a few seconds before generating another story.");
+        if (res.status === 429 || data.rateLimited) {
+          setRateLimitCountdown(data.retryAfterSeconds || 30);
+          throw new Error(data.error || "Gemini Free Tier rate limit reached. Cooldown active.");
         }
         throw new Error(data.error || "Failed to generate reading passage");
       }
@@ -177,6 +265,7 @@ export default function ReadingPractice({
         return {
           ...prev,
           activeThemeId: themeToGenerate,
+          updatedAt: new Date().toISOString(),
           passagesByTheme: {
             ...prevThemes,
             [themeToGenerate]: {
@@ -197,21 +286,7 @@ export default function ReadingPractice({
     }
   };
 
-  // Initial load: Only auto-generate if active theme has no cached passage AND no themes exist
-  useEffect(() => {
-    if (!isHydrated) return;
-    loadHistory();
-
-    const hasAnyPassage = Object.values(storedData.passagesByTheme || {}).some(
-      (t) => t?.passageData !== null && t?.passageData !== undefined
-    );
-
-    if (!hasAnyPassage && !currentThemeState.passageData) {
-      generatePassage(activeThemeId);
-    }
-  }, [isHydrated, userId]);
-
-  // 3. Switch active theme tab
+  // 5. Switch active theme tab
   const handleSelectTheme = (themeId: string) => {
     setStoredData((prev) => ({
       ...prev,
@@ -220,22 +295,23 @@ export default function ReadingPractice({
     setErrorMessage(null);
   };
 
-  // 4. Invalidate all cached themes with confirmation
+  // 6. Invalidate all cached themes with confirmation
   const confirmResetAllThemes = () => {
     setShowResetConfirm(false);
     setStoredData((prev) => ({
       ...prev,
       passagesByTheme: {},
+      updatedAt: new Date().toISOString(),
     }));
     generatePassage(activeThemeId);
   };
 
-  // 5. Submit multiple-choice answers for grading (scoped to active theme)
+  // 7. Submit multiple-choice answers for grading
   const handleSubmitAnswers = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!currentThemeState.passageData || submittingAnswers) return;
+    if (rateLimitCountdown !== null && rateLimitCountdown > 0) return;
 
-    // Check if all questions have been answered
     const unanswered = currentThemeState.passageData.questions.filter(
       (q) => currentThemeState.selectedAnswers[q.id] === undefined
     );
@@ -262,8 +338,9 @@ export default function ReadingPractice({
 
       const data = await res.json();
       if (!res.ok || !data.success) {
-        if (res.status === 429) {
-          throw new Error("Gemini rate limit exceeded. Please retry in a few seconds.");
+        if (res.status === 429 || data.rateLimited) {
+          setRateLimitCountdown(data.retryAfterSeconds || 30);
+          throw new Error(data.error || "Gemini rate limit exceeded. Cooldown active.");
         }
         throw new Error(data.error || "Failed to submit answers");
       }
@@ -273,6 +350,7 @@ export default function ReadingPractice({
         const current = prevThemes[activeThemeId] || { ...DEFAULT_THEME_STATE };
         return {
           ...prev,
+          updatedAt: new Date().toISOString(),
           passagesByTheme: {
             ...prevThemes,
             [activeThemeId]: {
@@ -293,12 +371,13 @@ export default function ReadingPractice({
   };
 
   const handleSelectOption = (questionId: number, optionIndex: number) => {
-    if (currentThemeState.evaluation) return; // Prevent changing after evaluation
+    if (currentThemeState.evaluation) return;
     setStoredData((prev) => {
       const prevThemes = prev.passagesByTheme || {};
       const current = prevThemes[activeThemeId] || { ...DEFAULT_THEME_STATE };
       return {
         ...prev,
+        updatedAt: new Date().toISOString(),
         passagesByTheme: {
           ...prevThemes,
           [activeThemeId]: {
@@ -319,6 +398,7 @@ export default function ReadingPractice({
       const current = prevThemes[activeThemeId] || { ...DEFAULT_THEME_STATE };
       return {
         ...prev,
+        updatedAt: new Date().toISOString(),
         passagesByTheme: {
           ...prevThemes,
           [activeThemeId]: {
@@ -345,33 +425,61 @@ export default function ReadingPractice({
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-800 pb-5">
         <div className="space-y-1">
-          <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold border border-cyan-500/20">
-            <BookOpen className="w-3.5 h-3.5" />
-            Reading Comprehension Studio
+          <div className="flex items-center gap-2">
+            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold border border-cyan-500/20">
+              <BookOpen className="w-3.5 h-3.5" />
+              Reading Comprehension Studio
+            </div>
+            {isSyncingRemote && (
+              <span className="inline-flex items-center gap-1 text-[11px] text-zinc-400 font-mono">
+                <Cloud className="w-3 h-3 text-cyan-400 animate-pulse" />
+                Syncing Supabase...
+              </span>
+            )}
           </div>
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-2">
             Context-Restricted Reading &amp; Interpretation
           </h2>
           <p className="text-xs text-zinc-400">
-            Independent theme cache &bull; Passages and quiz progress are saved per scenario theme.
+            Cross-device Supabase sync &bull; On-demand theme generation &bull; Independent passage cache.
           </p>
         </div>
 
         <div className="flex items-center gap-2.5">
           <button
             onClick={() => generatePassage(activeThemeId)}
-            disabled={loadingPassage || submittingAnswers}
+            disabled={loadingPassage || submittingAnswers || (rateLimitCountdown !== null && rateLimitCountdown > 0)}
             className="min-h-[44px] inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs transition-all bg-cyan-600 hover:bg-cyan-500 text-white shadow-md shadow-cyan-600/30 disabled:opacity-50 cursor-pointer active:scale-[0.98]"
           >
             <Sparkles className={`w-3.5 h-3.5 ${loadingPassage ? "animate-spin" : ""}`} />
             {loadingPassage
               ? "Generating Passage..."
+              : rateLimitCountdown !== null && rateLimitCountdown > 0
+              ? `Cooldown (${rateLimitCountdown}s)`
               : currentThemeState.passageData
               ? `Regenerate "${activePreset.label}"`
               : `Generate "${activePreset.label}"`}
           </button>
         </div>
       </div>
+
+      {/* Rate Limit Cooldown Notice */}
+      {rateLimitCountdown !== null && rateLimitCountdown > 0 && (
+        <div className="p-4 rounded-xl bg-amber-950/40 border border-amber-600/60 text-amber-200 text-xs flex items-center justify-between gap-3 animate-in fade-in duration-200">
+          <div className="flex items-center gap-2.5">
+            <Clock className="w-4 h-4 text-amber-400 shrink-0 animate-pulse" />
+            <div>
+              <span className="font-bold text-amber-100">Gemini Free Tier Rate Limit Active</span>
+              <p className="text-[11px] text-amber-300/90 mt-0.5">
+                Please wait for the cooldown window before requesting another reading passage.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-900/60 border border-amber-700 font-mono font-bold text-amber-200 text-xs shrink-0">
+            <span>{rateLimitCountdown}s</span>
+          </div>
+        </div>
+      )}
 
       {/* Confirmation Modal for Resetting All Themes */}
       {showResetConfirm && (
@@ -408,7 +516,7 @@ export default function ReadingPractice({
       )}
 
       {/* Stale Frontier Warning Banner */}
-      {isStaleFrontier && !loadingPassage && (
+      {isStaleFrontier && !loadingPassage && currentThemeState.passageData && (
         <div className="p-4 rounded-xl bg-cyan-950/40 border border-cyan-700/50 text-cyan-200 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Sparkle className="w-4 h-4 text-cyan-400 shrink-0" />
@@ -419,7 +527,8 @@ export default function ReadingPractice({
           <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() => generatePassage(activeThemeId)}
-              className="min-h-[36px] px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-[11px] cursor-pointer transition-colors"
+              disabled={rateLimitCountdown !== null && rateLimitCountdown > 0}
+              className="min-h-[36px] px-3 py-1.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-[11px] cursor-pointer transition-colors disabled:opacity-50"
             >
               Refresh Active Theme
             </button>
@@ -483,7 +592,7 @@ export default function ReadingPractice({
         </div>
       )}
 
-      {/* Passage Container with Loading Skeletons */}
+      {/* Passage Container with Loading Skeletons / Empty State */}
       <div className="rounded-xl bg-zinc-950/70 border border-zinc-800/90 p-5 sm:p-6 md:p-8 space-y-6 shadow-inner">
         {loadingPassage ? (
           <div className="space-y-6 animate-pulse py-4">
@@ -536,7 +645,7 @@ export default function ReadingPractice({
                     <button
                       key={size}
                       onClick={() =>
-                        setStoredData((prev) => ({ ...prev, fontSize: size }))
+                        setStoredData((prev) => ({ ...prev, fontSize: size, updatedAt: new Date().toISOString() }))
                       }
                       className={`min-h-[32px] min-w-[32px] px-2.5 py-1 rounded font-bold uppercase text-[10px] cursor-pointer transition-colors ${
                         (storedData.fontSize || "md") === size
@@ -765,22 +874,33 @@ export default function ReadingPractice({
                     <button
                       type="button"
                       onClick={() => generatePassage(activeThemeId)}
-                      className="min-h-[44px] inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl font-bold text-xs bg-cyan-600 hover:bg-cyan-500 text-white shadow-md shadow-cyan-900/40 transition-all cursor-pointer"
+                      disabled={rateLimitCountdown !== null && rateLimitCountdown > 0}
+                      className="min-h-[44px] inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl font-bold text-xs bg-cyan-600 hover:bg-cyan-500 text-white shadow-md shadow-cyan-900/40 transition-all cursor-pointer disabled:opacity-50"
                     >
                       <RotateCcw className="w-3.5 h-3.5" />
-                      Next {activePreset.label} Passage
+                      {rateLimitCountdown !== null && rateLimitCountdown > 0
+                        ? `Cooldown (${rateLimitCountdown}s)`
+                        : `Next ${activePreset.label} Passage`}
                     </button>
                   </div>
                 ) : (
                   <button
                     type="submit"
-                    disabled={submittingAnswers}
+                    disabled={
+                      submittingAnswers ||
+                      (rateLimitCountdown !== null && rateLimitCountdown > 0)
+                    }
                     className="min-h-[48px] inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white shadow-lg shadow-cyan-950/40 transition-all duration-200 active:scale-[0.98] disabled:opacity-50 cursor-pointer ml-auto"
                   >
                     {submittingAnswers ? (
                       <>
                         <RefreshCw className="w-4 h-4 animate-spin" />
                         Grading Answers...
+                      </>
+                    ) : rateLimitCountdown !== null && rateLimitCountdown > 0 ? (
+                      <>
+                        <Clock className="w-4 h-4" />
+                        Cooldown ({rateLimitCountdown}s)
                       </>
                     ) : (
                       <>
@@ -808,11 +928,13 @@ export default function ReadingPractice({
             </div>
             <button
               onClick={() => generatePassage(activeThemeId)}
-              disabled={loadingPassage}
-              className="min-h-[44px] inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white shadow-lg shadow-cyan-950/40 transition-all cursor-pointer"
+              disabled={loadingPassage || (rateLimitCountdown !== null && rateLimitCountdown > 0)}
+              className="min-h-[44px] inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white shadow-lg shadow-cyan-950/40 transition-all cursor-pointer disabled:opacity-50"
             >
               <Sparkles className="w-4 h-4" />
-              Generate &ldquo;{activePreset.label}&rdquo; Passage
+              {rateLimitCountdown !== null && rateLimitCountdown > 0
+                ? `Cooldown (${rateLimitCountdown}s)...`
+                : `Generate "${activePreset.label}" Passage`}
             </button>
           </div>
         )}

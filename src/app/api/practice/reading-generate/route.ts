@@ -81,28 +81,61 @@ Representative ${targetLevel} Grammar: ${grammarTags || "Standard " + targetLeve
 Generate a complete, high-quality Japanese reading comprehension passage with glossary and questions.
 `;
 
-    const { object: readingPassage } = await generateObject({
-      model: compositionModel,
-      schema: ReadingPassageSchema,
-      system: systemPrompt,
-      prompt: userPrompt,
-    });
+    try {
+      const { object: readingPassage } = await generateObject({
+        model: compositionModel,
+        schema: ReadingPassageSchema,
+        system: systemPrompt,
+        prompt: userPrompt,
+      });
 
-    return NextResponse.json({
-      success: true,
-      readingPassage,
-      userFrontier: {
-        level: targetLevel,
-        frontier: currentFrontier,
-      },
-      topic,
-    });
+      return NextResponse.json({
+        success: true,
+        readingPassage,
+        userFrontier: {
+          level: targetLevel,
+          frontier: currentFrontier,
+        },
+        topic,
+      });
+    } catch (aiErr: unknown) {
+      const isRateLimit =
+        (aiErr as any)?.status === 429 ||
+        /429|quota|rate limit|ResourceExhausted/i.test(
+          aiErr instanceof Error ? aiErr.message : ""
+        );
+
+      if (isRateLimit) {
+        return NextResponse.json(
+          {
+            success: false,
+            rateLimited: true,
+            retryAfterSeconds: 30,
+            error:
+              "Gemini API rate limit reached (Free Tier). Please wait a few moments before generating a new story.",
+          },
+          { status: 429 }
+        );
+      }
+      throw aiErr;
+    }
   } catch (error: unknown) {
     const message =
       error instanceof Error ? error.message : "Failed to generate reading passage";
+    const isRateLimit =
+      (error as any)?.status === 429 ||
+      /429|quota|rate limit|ResourceExhausted/i.test(message);
+
     return NextResponse.json(
-      { success: false, error: message },
-      { status: 500 }
+      {
+        success: false,
+        rateLimited: isRateLimit,
+        retryAfterSeconds: isRateLimit ? 30 : undefined,
+        error: isRateLimit
+          ? "Gemini API rate limit reached (Free Tier). Please wait a moment before generating another passage."
+          : message,
+      },
+      { status: isRateLimit ? 429 : 500 }
     );
   }
 }

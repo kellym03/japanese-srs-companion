@@ -21,6 +21,8 @@ import {
   Sparkle,
   ChevronDown,
   ChevronUp,
+  Clock,
+  Cloud,
 } from "lucide-react";
 import { usePersistentState } from "@/lib/hooks/usePersistentState";
 
@@ -84,6 +86,7 @@ interface StoredCompositionState {
   userSubmission: string;
   evaluation: EvaluationResult | null;
   frontierKey?: string;
+  updatedAt?: string;
 }
 
 interface CompositionPracticeProps {
@@ -114,14 +117,29 @@ export default function CompositionPractice({
   const [loadingPrompt, setLoadingPrompt] = useState<boolean>(false);
   const [evaluating, setEvaluating] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [rateLimitCountdown, setRateLimitCountdown] = useState<number | null>(null);
 
   const [recentSessions, setRecentSessions] = useState<PracticeSession[]>([]);
   const [loadingHistory, setLoadingHistory] = useState<boolean>(false);
   const [showHistory, setShowHistory] = useState<boolean>(false);
   const [copiedText, setCopiedText] = useState<boolean>(false);
+  const [isSyncingRemote, setIsSyncingRemote] = useState<boolean>(false);
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const currentFrontierKey = `${activeLevel}-${activeFrontier}`;
+
+  // Rate limit countdown tick
+  useEffect(() => {
+    if (rateLimitCountdown === null || rateLimitCountdown <= 0) return;
+    const interval = setInterval(() => {
+      setRateLimitCountdown((prev) => {
+        if (prev === null || prev <= 1) return null;
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [rateLimitCountdown]);
 
   // 1. Fetch recent practice sessions
   const loadRecentSessions = async () => {
@@ -141,8 +159,67 @@ export default function CompositionPractice({
     }
   };
 
-  // 2. Generate a new composition prompt
+  // 2. Fetch remote active state from Supabase on mount
+  useEffect(() => {
+    if (!isHydrated) return;
+    loadRecentSessions();
+
+    const fetchRemoteActiveState = async () => {
+      try {
+        setIsSyncingRemote(true);
+        const res = await fetch(
+          `/api/practice/active-state?userId=${encodeURIComponent(userId)}&mode=composition`
+        );
+        const data = await res.json();
+        if (data.success && data.state && data.state.scenario) {
+          // If remote state exists, check if it's more complete or newer than local
+          setStoredData((local) => {
+            if (!local.scenario || (data.state.updatedAt && new Date(data.state.updatedAt) > new Date(local.updatedAt || 0))) {
+              return { ...data.state };
+            }
+            return local;
+          });
+        }
+      } catch {
+        // Fall back to local
+      } finally {
+        setIsSyncingRemote(false);
+      }
+    };
+
+    fetchRemoteActiveState();
+  }, [isHydrated, userId]);
+
+  // 3. Debounced save to Supabase active state
+  useEffect(() => {
+    if (!isHydrated || !storedData.scenario) return;
+
+    if (saveTimeoutRef.current) clearTimeout(saveTimeoutRef.current);
+    saveTimeoutRef.current = setTimeout(async () => {
+      try {
+        await fetch("/api/practice/active-state", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            userId,
+            mode: "composition",
+            state: storedData,
+          }),
+        });
+      } catch {
+        // Non-fatal
+      }
+    }, 800);
+
+    return () => {
+      if (saveTimeoutRef.current) clearTimeout(saveTimeoutRef.current);
+    };
+  }, [storedData, isHydrated, userId]);
+
+  // 4. Generate a new composition prompt (Explicit trigger ONLY)
   const generateNewPrompt = async () => {
+    if (rateLimitCountdown !== null && rateLimitCountdown > 0) return;
+
     try {
       setLoadingPrompt(true);
       setErrorMessage(null);
@@ -153,8 +230,9 @@ export default function CompositionPractice({
       const data = await res.json();
 
       if (!res.ok || !data.success) {
-        if (res.status === 429) {
-          throw new Error("Gemini API rate limit reached. Please wait a moment and try again.");
+        if (res.status === 429 || data.rateLimited) {
+          setRateLimitCountdown(data.retryAfterSeconds || 30);
+          throw new Error(data.error || "Gemini Free Tier rate limit reached. Cooldown active.");
         }
         throw new Error(data.error || "Failed to generate composition scenario");
       }
@@ -167,6 +245,7 @@ export default function CompositionPractice({
         userSubmission: "",
         evaluation: null,
         frontierKey: currentFrontierKey,
+        updatedAt: new Date().toISOString(),
       });
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Error creating prompt";
@@ -176,20 +255,11 @@ export default function CompositionPractice({
     }
   };
 
-  // Initial load: Only generate if NO prompt exists in storage
-  useEffect(() => {
-    if (!isHydrated) return;
-    loadRecentSessions();
-
-    if (!storedData.scenario) {
-      generateNewPrompt();
-    }
-  }, [isHydrated, userId]);
-
-  // 3. Submit for Gemini evaluation
+  // 5. Submit for Gemini evaluation
   const handleEvaluate = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     if (!storedData.userSubmission.trim() || evaluating) return;
+    if (rateLimitCountdown !== null && rateLimitCountdown > 0) return;
 
     try {
       setEvaluating(true);
@@ -210,8 +280,9 @@ export default function CompositionPractice({
 
       const data = await res.json();
       if (!res.ok || !data.success) {
-        if (res.status === 429) {
-          throw new Error("Gemini rate limit exceeded. Please retry in a few seconds.");
+        if (res.status === 429 || data.rateLimited) {
+          setRateLimitCountdown(data.retryAfterSeconds || 30);
+          throw new Error(data.error || "Gemini rate limit reached. Cooldown active.");
         }
         throw new Error(data.error || "Evaluation failed");
       }
@@ -219,6 +290,7 @@ export default function CompositionPractice({
       setStoredData((prev) => ({
         ...prev,
         evaluation: data.evaluation,
+        updatedAt: new Date().toISOString(),
       }));
 
       loadRecentSessions();
@@ -234,14 +306,14 @@ export default function CompositionPractice({
   const insertVocab = (word: string) => {
     const currentText = storedData.userSubmission;
     if (!textareaRef.current) {
-      setStoredData((prev) => ({ ...prev, userSubmission: prev.userSubmission + word }));
+      setStoredData((prev) => ({ ...prev, userSubmission: prev.userSubmission + word, updatedAt: new Date().toISOString() }));
       return;
     }
     const start = textareaRef.current.selectionStart || currentText.length;
     const end = textareaRef.current.selectionEnd || currentText.length;
     const next = currentText.substring(0, start) + word + currentText.substring(end);
 
-    setStoredData((prev) => ({ ...prev, userSubmission: next }));
+    setStoredData((prev) => ({ ...prev, userSubmission: next, updatedAt: new Date().toISOString() }));
     setTimeout(() => {
       if (textareaRef.current) {
         textareaRef.current.focus();
@@ -295,32 +367,64 @@ export default function CompositionPractice({
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-800 pb-5">
         <div className="space-y-1">
-          <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold border border-indigo-500/20">
-            <PenTool className="w-3.5 h-3.5" />
-            Sentence Composition Studio
+          <div className="flex items-center gap-2">
+            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold border border-indigo-500/20">
+              <PenTool className="w-3.5 h-3.5" />
+              Sentence Composition Studio
+            </div>
+            {isSyncingRemote && (
+              <span className="inline-flex items-center gap-1 text-[11px] text-zinc-400 font-mono">
+                <Cloud className="w-3 h-3 text-cyan-400 animate-pulse" />
+                Syncing Supabase...
+              </span>
+            )}
           </div>
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-2">
             Targeted Composition &amp; Gemini Critique
           </h2>
           <p className="text-xs text-zinc-400">
-            Persistent exercise state &bull; Retains your prompt and unfinished drafts across tab switches.
+            Cross-device Supabase sync &bull; On-demand generation &bull; Drafts preserved across desktop and mobile.
           </p>
         </div>
 
         <div className="flex items-center gap-2.5">
           <button
             onClick={generateNewPrompt}
-            disabled={loadingPrompt || evaluating}
+            disabled={loadingPrompt || evaluating || (rateLimitCountdown !== null && rateLimitCountdown > 0)}
             className="min-h-[44px] inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs transition-all bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/30 disabled:opacity-50 cursor-pointer active:scale-[0.98]"
           >
             <Sparkles className={`w-3.5 h-3.5 ${loadingPrompt ? "animate-spin" : ""}`} />
-            {loadingPrompt ? "Crafting Scenario..." : "Generate New Prompt"}
+            {loadingPrompt
+              ? "Crafting Scenario..."
+              : rateLimitCountdown !== null && rateLimitCountdown > 0
+              ? `Cooldown (${rateLimitCountdown}s)`
+              : storedData.scenario
+              ? "Generate New Prompt"
+              : "Generate Practice Scenario"}
           </button>
         </div>
       </div>
 
+      {/* Rate Limit Cooldown Notice */}
+      {rateLimitCountdown !== null && rateLimitCountdown > 0 && (
+        <div className="p-4 rounded-xl bg-amber-950/40 border border-amber-600/60 text-amber-200 text-xs flex items-center justify-between gap-3 animate-in fade-in duration-200">
+          <div className="flex items-center gap-2.5">
+            <Clock className="w-4 h-4 text-amber-400 shrink-0 animate-pulse" />
+            <div>
+              <span className="font-bold text-amber-100">Gemini Free Tier Rate Limit Active</span>
+              <p className="text-[11px] text-amber-300/90 mt-0.5">
+                Please wait for the cooldown window before requesting another AI prompt.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-900/60 border border-amber-700 font-mono font-bold text-amber-200 text-xs shrink-0">
+            <span>{rateLimitCountdown}s</span>
+          </div>
+        </div>
+      )}
+
       {/* Stale Frontier Warning Banner */}
-      {isStaleFrontier && !loadingPrompt && (
+      {isStaleFrontier && !loadingPrompt && storedData.scenario && (
         <div className="p-3.5 rounded-xl bg-indigo-950/40 border border-indigo-700/50 text-indigo-200 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <Sparkle className="w-4 h-4 text-indigo-400 shrink-0" />
@@ -330,7 +434,8 @@ export default function CompositionPractice({
           </div>
           <button
             onClick={generateNewPrompt}
-            className="min-h-[36px] px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-[11px] shrink-0 cursor-pointer transition-colors"
+            disabled={rateLimitCountdown !== null && rateLimitCountdown > 0}
+            className="min-h-[36px] px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-[11px] shrink-0 cursor-pointer transition-colors disabled:opacity-50"
           >
             Refresh for {activeLevel}
           </button>
@@ -345,7 +450,7 @@ export default function CompositionPractice({
         </div>
       )}
 
-      {/* Prompt Card with Loading Skeleton */}
+      {/* Prompt Card with Loading Skeleton / Empty State */}
       <div className="rounded-xl bg-zinc-950/60 border border-zinc-800/90 p-5 md:p-6 space-y-4 relative overflow-hidden">
         {loadingPrompt ? (
           <div className="space-y-4 animate-pulse py-2">
@@ -369,7 +474,7 @@ export default function CompositionPractice({
               </div>
             </div>
           </div>
-        ) : (
+        ) : storedData.scenario ? (
           <>
             {/* Scenario Description */}
             <div className="space-y-1.5">
@@ -378,7 +483,7 @@ export default function CompositionPractice({
                 English Scenario Prompt
               </span>
               <p className="text-base md:text-lg font-semibold text-white leading-relaxed">
-                {storedData.scenario || "Click 'Generate New Prompt' to begin your composition exercise."}
+                {storedData.scenario}
               </p>
               {storedData.hint && (
                 <p className="text-xs text-zinc-400 italic">
@@ -457,80 +562,123 @@ export default function CompositionPractice({
               </div>
             </div>
           </>
+        ) : (
+          <div className="py-12 text-center space-y-4">
+            <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mx-auto">
+              <PenTool className="w-6 h-6" />
+            </div>
+            <div className="space-y-1 max-w-sm mx-auto">
+              <h4 className="text-base font-bold text-white">No active sentence scenario</h4>
+              <p className="text-xs text-zinc-400">
+                Click below to synthesize a composition challenge calibrated for {activeFrontier}.
+              </p>
+            </div>
+            <button
+              onClick={generateNewPrompt}
+              disabled={loadingPrompt || (rateLimitCountdown !== null && rateLimitCountdown > 0)}
+              className="min-h-[44px] inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white shadow-lg shadow-indigo-950/40 transition-all cursor-pointer disabled:opacity-50"
+            >
+              <Sparkles className="w-4 h-4" />
+              {rateLimitCountdown !== null && rateLimitCountdown > 0
+                ? `Cooldown (${rateLimitCountdown}s)...`
+                : "Generate Composition Prompt"}
+            </button>
+          </div>
         )}
       </div>
 
       {/* Composition Input Form with IME & Safe Typography Attributes */}
-      <form onSubmit={handleEvaluate} className="space-y-3">
-        <div className="space-y-1.5">
-          <label className="text-xs font-semibold text-zinc-300 flex items-center justify-between">
-            <span>Your Japanese Sentence (IME / Japanese Input):</span>
-            <span className="text-[11px] text-zinc-500 font-mono">
-              {storedData.userSubmission.length} characters &bull; Saved locally &bull; Press Ctrl+Enter to evaluate
-            </span>
-          </label>
-          <div className="relative">
-            <textarea
-              ref={textareaRef}
-              value={storedData.userSubmission}
-              onChange={(e) =>
-                setStoredData((prev) => ({ ...prev, userSubmission: e.target.value }))
-              }
-              onKeyDown={(e) => {
-                if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
-                  e.preventDefault();
-                  handleEvaluate();
+      {storedData.scenario && (
+        <form onSubmit={handleEvaluate} className="space-y-3">
+          <div className="space-y-1.5">
+            <label className="text-xs font-semibold text-zinc-300 flex items-center justify-between">
+              <span>Your Japanese Sentence (IME / Japanese Input):</span>
+              <span className="text-[11px] text-zinc-500 font-mono">
+                {storedData.userSubmission.length} characters &bull; Saved to Supabase &bull; Press Ctrl+Enter to evaluate
+              </span>
+            </label>
+            <div className="relative">
+              <textarea
+                ref={textareaRef}
+                value={storedData.userSubmission}
+                onChange={(e) =>
+                  setStoredData((prev) => ({
+                    ...prev,
+                    userSubmission: e.target.value,
+                    updatedAt: new Date().toISOString(),
+                  }))
                 }
-              }}
-              placeholder="ここに日本語で文を入力してください..."
-              rows={3}
-              lang="ja"
-              autoCapitalize="none"
-              autoCorrect="off"
-              spellCheck={false}
-              autoComplete="off"
-              inputMode="text"
-              className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-4 text-white text-base md:text-lg font-japanese focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-zinc-600 resize-none shadow-inner"
-            />
+                onKeyDown={(e) => {
+                  if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+                    e.preventDefault();
+                    handleEvaluate();
+                  }
+                }}
+                placeholder="ここに日本語で文を入力してください..."
+                rows={3}
+                lang="ja"
+                autoCapitalize="none"
+                autoCorrect="off"
+                spellCheck={false}
+                autoComplete="off"
+                inputMode="text"
+                className="w-full rounded-xl bg-zinc-950 border border-zinc-800 p-4 text-white text-base md:text-lg font-japanese focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-zinc-600 resize-none shadow-inner"
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="flex items-center justify-between gap-3">
-          <button
-            type="button"
-            onClick={() => setStoredData((prev) => ({ ...prev, userSubmission: "" }))}
-            disabled={!storedData.userSubmission || evaluating}
-            className="min-h-[44px] px-3 text-xs text-zinc-500 hover:text-zinc-300 transition-colors disabled:opacity-30 cursor-pointer"
-          >
-            Clear Text
-          </button>
+          <div className="flex items-center justify-between gap-3">
+            <button
+              type="button"
+              onClick={() =>
+                setStoredData((prev) => ({
+                  ...prev,
+                  userSubmission: "",
+                  updatedAt: new Date().toISOString(),
+                }))
+              }
+              disabled={!storedData.userSubmission || evaluating}
+              className="min-h-[44px] px-3 text-xs text-zinc-500 hover:text-zinc-300 transition-colors disabled:opacity-30 cursor-pointer"
+            >
+              Clear Text
+            </button>
 
-          <button
-            type="submit"
-            disabled={!storedData.userSubmission.trim() || evaluating}
-            className="min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white shadow-lg shadow-emerald-950/40 transition-all duration-200 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
-          >
-            {evaluating ? (
-              <>
-                <RefreshCw className="w-4 h-4 animate-spin" />
-                Gemini Analyzing...
-              </>
-            ) : (
-              <>
-                <Send className="w-4 h-4" />
-                Evaluate Sentence
-              </>
-            )}
-          </button>
-        </div>
-      </form>
+            <button
+              type="submit"
+              disabled={
+                !storedData.userSubmission.trim() ||
+                evaluating ||
+                (rateLimitCountdown !== null && rateLimitCountdown > 0)
+              }
+              className="min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white shadow-lg shadow-emerald-950/40 transition-all duration-200 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+            >
+              {evaluating ? (
+                <>
+                  <RefreshCw className="w-4 h-4 animate-spin" />
+                  Gemini Analyzing...
+                </>
+              ) : rateLimitCountdown !== null && rateLimitCountdown > 0 ? (
+                <>
+                  <Clock className="w-4 h-4" />
+                  Cooldown ({rateLimitCountdown}s)
+                </>
+              ) : (
+                <>
+                  <Send className="w-4 h-4" />
+                  Evaluate Sentence
+                </>
+              )}
+            </button>
+          </div>
+        </form>
+      )}
 
       {/* Evaluation Results Card with Smooth Skeletons */}
       {evaluating && (
         <div className="p-6 md:p-8 rounded-2xl bg-zinc-950/80 border border-zinc-800 space-y-4 animate-pulse">
           <div className="flex justify-between items-center pb-4 border-b border-zinc-800/80">
             <div className="h-6 w-48 bg-zinc-800 rounded-full" />
-            <div className="h-10 w-32 bg-zinc-850 rounded-xl" />
+            <div className="h-10 w-32 bg-zinc-855 rounded-xl" />
           </div>
           <div className="h-16 w-full bg-indigo-950/30 border border-indigo-900/30 rounded-xl" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -597,10 +745,13 @@ export default function CompositionPractice({
 
               <button
                 onClick={generateNewPrompt}
-                className="min-h-[44px] inline-flex items-center gap-1.5 px-4 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-md shadow-indigo-900/30 cursor-pointer transition-all active:scale-[0.98]"
+                disabled={rateLimitCountdown !== null && rateLimitCountdown > 0}
+                className="min-h-[44px] inline-flex items-center gap-1.5 px-4 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-md shadow-indigo-900/30 cursor-pointer transition-all active:scale-[0.98] disabled:opacity-50"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
-                Next Exercise
+                {rateLimitCountdown !== null && rateLimitCountdown > 0
+                  ? `Cooldown (${rateLimitCountdown}s)`
+                  : "Next Exercise"}
               </button>
             </div>
           </div>

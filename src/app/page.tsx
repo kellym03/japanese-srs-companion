@@ -18,6 +18,8 @@ import {
   Smartphone,
   Download,
   Check,
+  User,
+  Settings,
 } from "lucide-react";
 import FrontierSelector from "@/components/FrontierSelector";
 import CompositionPractice from "@/components/CompositionPractice";
@@ -58,6 +60,10 @@ interface SyncResult {
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"reading" | "composition" | "frontier">("reading");
+  const [userId, setUserId] = useState<string>("default-user");
+  const [showUserModal, setShowUserModal] = useState<boolean>(false);
+  const [inputUserId, setInputUserId] = useState<string>("");
+
   const [stats, setStats] = useState<SyncStats | null>(null);
   const [loadingStats, setLoadingStats] = useState(true);
   const [syncing, setSyncing] = useState(false);
@@ -70,9 +76,14 @@ export default function Home() {
     frontier: "N3 Lesson 7",
   });
 
-  // Check PWA standalone mode and listen for install prompts
+  // Check PWA standalone mode and listen for install prompts & load stored userId
   useEffect(() => {
     if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("japanese_srs_user_id");
+      if (stored) {
+        setUserId(stored);
+      }
+
       if (
         window.matchMedia("(display-mode: standalone)").matches ||
         (window.navigator as any).standalone === true
@@ -92,6 +103,14 @@ export default function Home() {
     }
   }, []);
 
+  const handleSaveUserId = (newId: string) => {
+    const trimmed = newId.trim() || "default-user";
+    setUserId(trimmed);
+    localStorage.setItem("japanese_srs_user_id", trimmed);
+    setShowUserModal(false);
+    loadStats(trimmed);
+  };
+
   const handleInstallClick = async () => {
     if (!installPrompt) return;
     installPrompt.prompt();
@@ -103,10 +122,10 @@ export default function Home() {
   };
 
   // Load existing sync stats from Supabase
-  const loadStats = async () => {
+  const loadStats = async (targetUser = userId) => {
     try {
       setLoadingStats(true);
-      const res = await fetch("/api/sync/wanikani");
+      const res = await fetch(`/api/sync/wanikani?userId=${encodeURIComponent(targetUser)}`);
       const data = await res.json();
       if (data.success) {
         setStats(data);
@@ -122,8 +141,8 @@ export default function Home() {
   };
 
   useEffect(() => {
-    loadStats();
-  }, []);
+    loadStats(userId);
+  }, [userId]);
 
   // Trigger sync
   const handleSync = async () => {
@@ -137,7 +156,7 @@ export default function Home() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ userId: "default-user" }),
+        body: JSON.stringify({ userId }),
       });
 
       const data = await res.json();
@@ -146,7 +165,7 @@ export default function Home() {
       }
 
       setSyncResult(data);
-      await loadStats();
+      await loadStats(userId);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Sync failed";
       setErrorMessage(msg);
@@ -186,18 +205,31 @@ export default function Home() {
               Adaptive Practice Studio
             </h1>
             <p className="text-xs sm:text-sm text-zinc-400 mt-1 leading-relaxed">
-              PWA installable &bull; WaniKani Guru+ vocabulary &bull; Bunpro JLPT grammar frontier &bull; Google Gemini evaluation.
+              Supabase cross-device sync &bull; WaniKani Guru+ vocabulary &bull; Bunpro JLPT frontier &bull; Google Gemini evaluation.
             </p>
           </div>
 
           <div className="flex items-center gap-2.5 flex-wrap">
+            {/* User Profile Sync Button */}
+            <button
+              onClick={() => {
+                setInputUserId(userId);
+                setShowUserModal(true);
+              }}
+              className="min-h-[38px] inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-700/80 text-xs font-semibold text-zinc-200 transition-colors cursor-pointer"
+              title="Configure cross-device profile ID"
+            >
+              <User className="w-3.5 h-3.5 text-cyan-400" />
+              <span>User: <strong className="text-white">{userId}</strong></span>
+            </button>
+
             {installPrompt && !isInstalled && (
               <button
                 onClick={handleInstallClick}
-                className="min-h-[40px] inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-cyan-600 to-indigo-600 text-white text-xs font-bold shadow-md shadow-cyan-950/40 cursor-pointer hover:opacity-95 transition-opacity"
+                className="min-h-[38px] inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-cyan-600 to-indigo-600 text-white text-xs font-bold shadow-md shadow-cyan-950/40 cursor-pointer hover:opacity-95 transition-opacity"
               >
                 <Download className="w-3.5 h-3.5" />
-                Install PWA App
+                Install PWA
               </button>
             )}
 
@@ -214,6 +246,52 @@ export default function Home() {
             </div>
           </div>
         </header>
+
+        {/* User Profile ID Switcher Modal */}
+        {showUserModal && (
+          <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-4">
+            <div className="max-w-md w-full rounded-2xl bg-zinc-900 border border-zinc-700 p-6 space-y-4 shadow-2xl animate-in zoom-in-95 duration-150">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                  <User className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-white">Cross-Device User Profile</h3>
+                  <p className="text-xs text-zinc-400">Sync drafts and study frontier between devices.</p>
+                </div>
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-xs font-medium text-zinc-300">Sync User ID:</label>
+                <input
+                  type="text"
+                  value={inputUserId}
+                  onChange={(e) => setInputUserId(e.target.value)}
+                  placeholder="default-user"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 text-sm text-white font-mono focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500"
+                />
+                <p className="text-[11px] text-zinc-500">
+                  Enter the same User ID on your phone and desktop to share all active drafts and readings.
+                </p>
+              </div>
+
+              <div className="flex items-center justify-end gap-3 pt-2">
+                <button
+                  onClick={() => setShowUserModal(false)}
+                  className="min-h-[44px] px-4 py-2 rounded-xl text-xs font-semibold bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors cursor-pointer"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={() => handleSaveUserId(inputUserId)}
+                  className="min-h-[44px] px-5 py-2 rounded-xl text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition-colors cursor-pointer shadow-md shadow-cyan-900/30"
+                >
+                  Save &amp; Sync
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Practice Mode Tabs (Desktop / Tablet view) */}
         <div className="flex items-center justify-between border-b border-zinc-800/80 pb-3">
@@ -269,7 +347,7 @@ export default function Home() {
         {/* Persistent Practice Views (Mounted simultaneously to prevent re-renders / re-fetching) */}
         <div className={activeTab === "reading" ? "block" : "hidden"}>
           <ReadingPractice
-            userId="default-user"
+            userId={userId}
             activeLevel={activeFrontier.level}
             activeFrontier={activeFrontier.frontier}
           />
@@ -277,7 +355,7 @@ export default function Home() {
 
         <div className={activeTab === "composition" ? "block" : "hidden"}>
           <CompositionPractice
-            userId="default-user"
+            userId={userId}
             activeLevel={activeFrontier.level}
             activeFrontier={activeFrontier.frontier}
           />
@@ -287,7 +365,7 @@ export default function Home() {
         <div className={`space-y-8 ${activeTab === "frontier" ? "block" : "block"}`}>
           {/* Phase 2: Study Frontier Selector */}
           <FrontierSelector
-            userId="default-user"
+            userId={userId}
             onFrontierChange={(level, frontier) =>
               setActiveFrontier({ level, frontier })
             }
@@ -420,7 +498,7 @@ export default function Home() {
                 <p className="text-xs text-zinc-400">Sample of items currently in the database</p>
               </div>
               <button
-                onClick={loadStats}
+                onClick={() => loadStats(userId)}
                 disabled={loadingStats}
                 className="min-h-[36px] px-2 text-xs text-zinc-400 hover:text-white flex items-center gap-1 transition-colors cursor-pointer"
               >
