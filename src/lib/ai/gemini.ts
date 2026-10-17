@@ -1,7 +1,9 @@
 import { google } from "@ai-sdk/google";
 import { z } from "zod";
 
-export const compositionModel = google("gemini-3.6-flash");
+export * from "./fallback";
+
+export const compositionModel = google(process.env.AI_PRIMARY_MODEL || "gemini-2.5-flash");
 
 export const CompositionEvaluationSchema = z.object({
   isCorrect: z

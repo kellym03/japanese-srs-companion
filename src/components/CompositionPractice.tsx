@@ -230,9 +230,9 @@ export default function CompositionPractice({
       const data = await res.json();
 
       if (!res.ok || !data.success) {
-        if (res.status === 429 || data.rateLimited) {
-          setRateLimitCountdown(data.retryAfterSeconds || 30);
-          throw new Error(data.error || "Gemini Free Tier rate limit reached. Cooldown active.");
+        if (res.status === 429 || res.status === 503 || data.rateLimited || data.highTraffic) {
+          setRateLimitCountdown(data.retryAfterSeconds || 15);
+          throw new Error(data.error || "Gemini is experiencing high traffic. Cooldown active.");
         }
         throw new Error(data.error || "Failed to generate composition scenario");
       }
@@ -280,9 +280,9 @@ export default function CompositionPractice({
 
       const data = await res.json();
       if (!res.ok || !data.success) {
-        if (res.status === 429 || data.rateLimited) {
-          setRateLimitCountdown(data.retryAfterSeconds || 30);
-          throw new Error(data.error || "Gemini rate limit reached. Cooldown active.");
+        if (res.status === 429 || res.status === 503 || data.rateLimited || data.highTraffic) {
+          setRateLimitCountdown(data.retryAfterSeconds || 15);
+          throw new Error(data.error || "Gemini is experiencing high traffic. Cooldown active.");
         }
         throw new Error(data.error || "Evaluation failed");
       }

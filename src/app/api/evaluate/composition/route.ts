@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { generateObject } from "ai";
-import { compositionModel, CompositionEvaluationSchema } from "@/lib/ai/gemini";
+import {
+  generateObjectWithFallback,
+  CompositionEvaluationSchema,
+  isRetryableOrOverloadError,
+} from "@/lib/ai/gemini";
 import { createAdminClient } from "@/lib/supabase/server";
 
 export const maxDuration = 60;
@@ -72,8 +75,11 @@ Student's Japanese Submission: "${userSubmission.trim()}"
 `;
 
     try {
-      const { object: evaluation } = await generateObject({
-        model: compositionModel,
+      const {
+        object: evaluation,
+        modelUsed,
+        fallbackOccurred,
+      } = await generateObjectWithFallback({
         schema: CompositionEvaluationSchema,
         system: systemPrompt,
         prompt: userPrompt,
@@ -91,6 +97,10 @@ Student's Japanese Submission: "${userSubmission.trim()}"
               scenario: promptScenario,
               targetGrammar: grammarInfo,
               targetVocab: targetVocab || [],
+              aiMeta: {
+                modelUsed,
+                fallbackOccurred,
+              },
             },
             user_submission: userSubmission.trim(),
             evaluation,
@@ -109,24 +119,27 @@ Student's Japanese Submission: "${userSubmission.trim()}"
         success: true,
         evaluation,
         sessionId,
+        aiMeta: {
+          modelUsed,
+          fallbackOccurred,
+        },
       });
     } catch (aiErr: unknown) {
-      const isRateLimit =
-        (aiErr as any)?.status === 429 ||
-        /429|quota|rate limit|ResourceExhausted/i.test(
-          aiErr instanceof Error ? aiErr.message : ""
-        );
+      const isOverloadedOrRateLimit =
+        Boolean((aiErr as any)?.isOverloaded) ||
+        isRetryableOrOverloadError(aiErr);
 
-      if (isRateLimit) {
+      if (isOverloadedOrRateLimit) {
         return NextResponse.json(
           {
             success: false,
             rateLimited: true,
-            retryAfterSeconds: 30,
+            highTraffic: true,
+            retryAfterSeconds: 15,
             error:
-              "Gemini API rate limit reached (Free Tier). Please wait a few moments before evaluating.",
+              "Gemini is currently experiencing high traffic volumes across all fallback models. Please wait 15 seconds and try again.",
           },
-          { status: 429 }
+          { status: 503 }
         );
       }
       throw aiErr;
@@ -134,20 +147,21 @@ Student's Japanese Submission: "${userSubmission.trim()}"
   } catch (error: unknown) {
     const message =
       error instanceof Error ? error.message : "Failed to evaluate composition";
-    const isRateLimit =
-      (error as any)?.status === 429 ||
-      /429|quota|rate limit|ResourceExhausted/i.test(message);
+    const isOverloadedOrRateLimit =
+      Boolean((error as any)?.isOverloaded) ||
+      isRetryableOrOverloadError(error);
 
     return NextResponse.json(
       {
         success: false,
-        rateLimited: isRateLimit,
-        retryAfterSeconds: isRateLimit ? 30 : undefined,
-        error: isRateLimit
-          ? "Gemini API rate limit reached (Free Tier). Please wait a moment before submitting evaluation."
+        rateLimited: isOverloadedOrRateLimit,
+        highTraffic: isOverloadedOrRateLimit,
+        retryAfterSeconds: isOverloadedOrRateLimit ? 15 : undefined,
+        error: isOverloadedOrRateLimit
+          ? "Gemini is currently experiencing high traffic volumes. Please wait a few moments before trying again."
           : message,
       },
-      { status: isRateLimit ? 429 : 500 }
+      { status: isOverloadedOrRateLimit ? 503 : 500 }
     );
   }
 }

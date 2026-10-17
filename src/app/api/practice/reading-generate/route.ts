@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { generateObject } from "ai";
-import { compositionModel, ReadingPassageSchema } from "@/lib/ai/gemini";
+import {
+  generateObjectWithFallback,
+  ReadingPassageSchema,
+  isRetryableOrOverloadError,
+} from "@/lib/ai/gemini";
 import { createAdminClient } from "@/lib/supabase/server";
 
 export const maxDuration = 60;
@@ -82,8 +85,11 @@ Generate a complete, high-quality Japanese reading comprehension passage with gl
 `;
 
     try {
-      const { object: readingPassage } = await generateObject({
-        model: compositionModel,
+      const {
+        object: readingPassage,
+        modelUsed,
+        fallbackOccurred,
+      } = await generateObjectWithFallback({
         schema: ReadingPassageSchema,
         system: systemPrompt,
         prompt: userPrompt,
@@ -97,24 +103,27 @@ Generate a complete, high-quality Japanese reading comprehension passage with gl
           frontier: currentFrontier,
         },
         topic,
+        aiMeta: {
+          modelUsed,
+          fallbackOccurred,
+        },
       });
     } catch (aiErr: unknown) {
-      const isRateLimit =
-        (aiErr as any)?.status === 429 ||
-        /429|quota|rate limit|ResourceExhausted/i.test(
-          aiErr instanceof Error ? aiErr.message : ""
-        );
+      const isOverloadOrRateLimit =
+        Boolean((aiErr as any)?.isOverloaded) ||
+        isRetryableOrOverloadError(aiErr);
 
-      if (isRateLimit) {
+      if (isOverloadOrRateLimit) {
         return NextResponse.json(
           {
             success: false,
             rateLimited: true,
-            retryAfterSeconds: 30,
+            highTraffic: true,
+            retryAfterSeconds: 15,
             error:
-              "Gemini API rate limit reached (Free Tier). Please wait a few moments before generating a new story.",
+              "Gemini is currently experiencing high traffic volumes across all fallback models. Please wait a few moments and try generating again.",
           },
-          { status: 429 }
+          { status: 503 }
         );
       }
       throw aiErr;
@@ -122,20 +131,21 @@ Generate a complete, high-quality Japanese reading comprehension passage with gl
   } catch (error: unknown) {
     const message =
       error instanceof Error ? error.message : "Failed to generate reading passage";
-    const isRateLimit =
-      (error as any)?.status === 429 ||
-      /429|quota|rate limit|ResourceExhausted/i.test(message);
+    const isOverloadOrRateLimit =
+      Boolean((error as any)?.isOverloaded) ||
+      isRetryableOrOverloadError(error);
 
     return NextResponse.json(
       {
         success: false,
-        rateLimited: isRateLimit,
-        retryAfterSeconds: isRateLimit ? 30 : undefined,
-        error: isRateLimit
-          ? "Gemini API rate limit reached (Free Tier). Please wait a moment before generating another passage."
+        rateLimited: isOverloadOrRateLimit,
+        highTraffic: isOverloadOrRateLimit,
+        retryAfterSeconds: isOverloadOrRateLimit ? 15 : undefined,
+        error: isOverloadOrRateLimit
+          ? "Gemini is currently experiencing high traffic volumes. Please wait a few moments before generating another passage."
           : message,
       },
-      { status: isRateLimit ? 429 : 500 }
+      { status: isOverloadOrRateLimit ? 503 : 500 }
     );
   }
 }

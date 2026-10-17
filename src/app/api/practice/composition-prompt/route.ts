@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createAdminClient } from "@/lib/supabase/server";
-import { generateObject } from "ai";
-import { compositionModel } from "@/lib/ai/gemini";
+import { generateObjectWithFallback } from "@/lib/ai/gemini";
 import { z } from "zod";
 
 export const maxDuration = 60;
@@ -122,16 +121,16 @@ export async function GET(req: NextRequest) {
     });
 
     try {
-      const { object: scenarioData } = await generateObject({
-        model: compositionModel,
-        schema: promptGeneratorSchema,
-        prompt: `Generate a realistic everyday Japanese composition scenario for a JLPT ${targetLevel} student.
+      const { object: scenarioData, modelUsed, fallbackOccurred } =
+        await generateObjectWithFallback({
+          schema: promptGeneratorSchema,
+          prompt: `Generate a realistic everyday Japanese composition scenario for a JLPT ${targetLevel} student.
 Target Grammar Point: ${targetGrammar.title} (${targetGrammar.meaning})
 Formation rule: ${targetGrammar.formation}
 Required/Suggested Vocabulary: ${vocabListText}
 
 Create a prompt in English (1-2 sentences) instructing the user to express a situation where using this grammar pattern and these vocabulary words is completely natural. Provide an encouraging, concise situation.`,
-      });
+        });
 
       return NextResponse.json({
         success: true,
@@ -144,28 +143,18 @@ Create a prompt in English (1-2 sentences) instructing the user to express a sit
           frontier: currentFrontier,
           lessonTag: activeLessonTag,
         },
+        aiMeta: {
+          modelUsed,
+          fallbackOccurred,
+        },
       });
     } catch (aiErr: unknown) {
-      const isRateLimit =
-        (aiErr as any)?.status === 429 ||
-        /429|quota|rate limit|ResourceExhausted/i.test(
-          aiErr instanceof Error ? aiErr.message : ""
-        );
+      console.warn(
+        "[composition-prompt] AI models exhausted or unavailable, using deterministic template fallback:",
+        aiErr instanceof Error ? aiErr.message : aiErr
+      );
 
-      if (isRateLimit) {
-        return NextResponse.json(
-          {
-            success: false,
-            rateLimited: true,
-            retryAfterSeconds: 30,
-            error:
-              "Gemini API rate limit reached (Free Tier). Please wait a few moments before generating a new prompt.",
-          },
-          { status: 429 }
-        );
-      }
-
-      // Fallback static scenario if generation times out
+      // Fallback static scenario if generation times out or all AI models fail
       const vocabWord1 = targetVocab[0]?.characters || "言葉";
       const vocabWord2 = targetVocab[1]?.characters || "会話";
       const fallbackScenario = `Express a situation where you explain or remark on something using ${targetGrammar.title} (${targetGrammar.meaning}), incorporating "${vocabWord1}" and "${vocabWord2}".`;
@@ -180,6 +169,10 @@ Create a prompt in English (1-2 sentences) instructing the user to express a sit
           level: targetLevel,
           frontier: currentFrontier,
           lessonTag: activeLessonTag,
+        },
+        aiMeta: {
+          modelUsed: "offline-fallback-template",
+          fallbackOccurred: true,
         },
       });
     }
